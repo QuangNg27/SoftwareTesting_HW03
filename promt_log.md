@@ -128,3 +128,13 @@ thế tôi xóa @[skill] được rồi nhỉ
 ```text
 tùy chỉnh lại section 1.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] chỉ còn phía User thôi
 ```
+
+### [27-07-2026 14:28] | Gemini
+```text
+cập nhật bảng checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] cái nào pass rồi thì bỏ ghi chú lỗi còn NA/Fail thì giữ
+```
+
+### [27-07-2026 14:30] | Gemini
+```text
+cập nhật skill phần ghi chú như vậy (nếu có)
+```

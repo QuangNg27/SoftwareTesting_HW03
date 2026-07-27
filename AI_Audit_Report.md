@@ -703,18 +703,68 @@ tùy chỉnh lại section 1.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW
 
 ---
 
+#### **Tác vụ 19: Cập nhật Bảng Checklist 2.1 (D1) trong Report.md: Xóa Ghi chú cho Tiêu chí Pass, Giữ lại Ghi chú cho Fail và NA**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 27-07-2026
+  - **Prompt gốc:**
+```text
+cập nhật bảng checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]  cái nào pass rồi thì bỏ ghi chú lỗi còn NA/Fail thì giữ
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã cập nhật toàn bộ Bảng thực thi 2.1 (Màn hình D1) trong Report.md: loại bỏ hoàn toàn nội dung cột Ghi Chú cho tất cả các dòng có kết quả Pass, chỉ giữ lại chi tiết ghi chú cho các tiêu chí có kết quả Fail (lỗi/usability) hoặc NA (không áp dụng).
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên kiểm tra và xác nhận bảng kiểm thử D1 trong Report.md đã tinh gọn đúng yêu cầu.
+
+---
+
+#### **Tác vụ 20: Cập nhật Quy tắc Cột Ghi Chú Lỗi (Notes Rule) vào Agent Skill gui-checklist-execution**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 27-07-2026
+  - **Prompt gốc:**
+```text
+cập nhật skill phần ghi chú như vậy (nếu có)
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã cập nhật Bước 4 (Quy tắc Cột Ghi Chú Lỗi - Notes Rule) trong tệp kỹ năng gui-checklist-execution tại cả 3 vị trí (.agents/skills/, ~/.gemini/antigravity/skills/ và root folder): bắt buộc để trống cột Ghi Chú cho tiêu chí Pass và giữ chi tiết cho Fail/NA.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên kiểm tra và xác nhận kỹ năng gui-checklist-execution đã cập nhật quy tắc cột Ghi Chú chuẩn hóa cho mọi màn hình tiếp theo.
+
+---
+
 ### Overall AI Accuracy Ratio
 
 | Trạng thái | Số lượng | Tỷ lệ phần trăm |
 |---|---|---|
-| **VALID** | **16** | **88.9%** |
-| **INVALID** | **2** | **11.1%** |
+| **VALID** | **18** | **90.0%** |
+| **INVALID** | **2** | **10.0%** |
 | **INCOMPLETE** | **0** | **0.0%** |
-| **Tổng số tác vụ kiểm định** | **18** | **100.0%** |
+| **Tổng số tác vụ kiểm định** | **20** | **100.0%** |
 
 #### Đánh giá Tổng quan & Phân tích Nguyên nhân Lỗi AI (AI Error Root-Cause Analysis):
 
-1. **Phân tích các tác vụ Đánh giá INVALID (2/18 tác vụ = 11.1%):**
+1. **Phân tích các tác vụ Đánh giá INVALID (2/20 tác vụ = 10.0%):**
    * **Tác vụ 4 (`INVALID`):** AI phán đoán chưa tối ưu về mặt kiến trúc màn hình khi gộp chung màn hình Danh sách (List) và Chi tiết (Detail) phía User Side thành 1 màn hình D2 duy nhất trong `Report.md`. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 10 để ép AI phân tách thành D2 (List) và D3 (Detail), nâng phạm vi kiểm thử lên 5 màn hình.
    * **Tác vụ 11 (`INVALID`):** AI mắc 2 sai sót: (1) Phán đoán nhầm tiêu chí `IA-02-01` là `Fail` (báo sai lỗi `USA-01` thiếu dấu `*` trong khi thực tế label có dấu `*` màu đỏ rõ ràng); (2) Quên ghi file ảnh PNG ra ổ đĩa mà mới dừng ở log response. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 12 (bắt ghi file ảnh PNG qua Python) và Tác vụ 13 (bắt sửa `IA-02-01` thành `Pass` & xóa `USA-01`).
 

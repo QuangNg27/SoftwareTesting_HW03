@@ -1,6 +1,6 @@
 ---
 name: gui-checklist-execution
-description: Automatically performs GUI Checklist Execution for EMS SUT screens, evaluates 48 criteria (IA-01-01 to IA-04-12), logs defects into bug_and_usability_findings_log.md, saves PNG screenshots to bug_screenshot/, updates Report.md, and maintains AI_Audit_Report.md and promt_log.md. Activate/trigger this skill whenever the user asks to test an EMS screen, run a GUI checklist execution, or log bugs.
+description: Automatically performs GUI Checklist Execution for EMS SUT screens, evaluates 48 criteria (IA-01-01 to IA-04-12), logs defects into bug_and_usability_findings_log.md, saves PNG screenshots to bug_screenshot/, updates Report.md (leaving Notes empty for Pass items and keeping Notes for Fail/NA items), and maintains AI_Audit_Report.md and promt_log.md. Activate/trigger this skill whenever the user asks to test an EMS screen, run a GUI checklist execution, or log bugs.
 ---
 
 # Hướng dẫn Kỹ năng: Thực thi Kiểm thử GUI Checklist (GUI Checklist Execution Skill) - HW03 EMS
@@ -52,6 +52,9 @@ Nếu tiêu chí được đánh giá là **`Fail`**:
 
 ### Bước 4: Cập nhật Báo cáo Báo cáo Chính (`Report.md`)
 - **Tập trung Phạm vi:** Chỉ cập nhật Bảng thực thi của màn hình được yêu cầu.
+- **Quy tắc Cột Ghi Chú Lỗi (Notes Rule):**
+  - đối với các tiêu chí đánh giá là **`Pass`**: Bắt buộc để trống cột *Ghi Chú Lỗi (Notes)*.
+  - đối với các tiêu chí đánh giá là **`Fail`** hoặc **`NA`**: Giữ nguyên nội dung ghi chú chi tiết mô tả lỗi hoặc lý do không áp dụng.
 - **Tuyệt đối tuân thủ:** Không thay đổi bất kỳ mục hoặc bảng kiểm thử của các màn hình khác trong `Report.md`.
 
 ### Bước 5: Nhật ký Prompt & Audit AI (`ai_audit_prompt_log.md` Alignment)
