@@ -821,10 +821,60 @@ không bấm được
   **VALID**
 
 - **4. Reasoning (Lý do đánh giá):**
-  AI đã tiếp thu phản hồi sửa lỗi từ sinh viên ở Tác vụ 22, cập nhật toàn bộ cột Screenshot ref trong bug_and_usability_findings_log.md thành dạng liên kết tương đối chuẩn [filename.png](./bug_screenshot/filename.png), giúp người dùng click trực tiếp (hoặc Ctrl+Click) mở ngay tệp ảnh PNG trên VS Code / Antigravity.
+  AI đã tiếp thu phản hồi sửa lỗi từ sinh viên ở Tác vụ 22, cập nhật toàn bộ cột Screenshot ref trong bug_and_usability_findings_log.md thành dạng liên kết tương đối chuẩn [filename.png](./bug_screenshot/filename.png), giúp người dùng click trực tiếp mở tệp ảnh PNG.
 
 - **5. Student fix (Bản sửa đổi của sinh viên):**
   Sinh viên kiểm tra và xác nhận tất cả các liên kết ảnh minh chứng trong bug_and_usability_findings_log.md đã click mở tệp ảnh PNG thành công 100%.
+
+---
+
+#### **Tác vụ 24: Rà soát 100% Tiêu chí Fail trong Checklist 2.1 và Đồng bộ Đầy đủ Nhật ký Lỗi USA-01 (IA-02-03)**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 27-07-2026
+  - **Prompt gốc:**
+```text
+rà soát lại item nào fail ở checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] rồi kiểm tra @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] xem có thiếu không thì điền thêm
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã rà soát 100% danh mục 48 tiêu chí trên Màn hình D1 trong Section 2.1 của Report.md, phát hiện tiêu chí IA-02-03 (thiếu báo lỗi inline validation thời gian thực dưới từng ô nhập liệu) mang kết quả Fail nhưng chưa có mục lỗi tương ứng trong bug_and_usability_findings_log.md. AI đã bổ sung mục lỗi USA-01 đầy đủ 9 cột tiêu chuẩn và cập nhật liên kết Log ID hai chiều giữa Report.md và nhật ký lỗi.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên rà soát và xác nhận toàn bộ 5 tiêu chí Fail trên Màn hình D1 đã khớp 100% với 5 mục lỗi trong bug_and_usability_findings_log.md.
+
+---
+
+#### **Tác vụ 25: Bổ sung Báo cáo Lỗi Usability USA-04 cho Tiêu chí IA-04-13 vào Nhật ký Lỗi bug_and_usability_findings_log.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 27-07-2026
+  - **Prompt gốc:**
+```text
+điền thêm vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] cho item IA-04-13 của section 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã ghi bổ sung mục lỗi USA-04 cho tiêu chí IA-04-13 (ô nhập liệu textbox không có hiệu ứng viền/nổi bật Focus State khi nhấp chuột) vào tệp bug_and_usability_findings_log.md đầy đủ 9 cột tiêu chuẩn (§7) và đồng bộ mã ID (Log USA-04) vào cột Ghi chú của Report.md.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên kiểm tra và xác nhận tiêu chí IA-04-13 trong Report.md và mục lỗi USA-04 trong bug_and_usability_findings_log.md đã khớp 100%.
 
 ---
 
@@ -832,14 +882,14 @@ không bấm được
 
 | Trạng thái | Số lượng | Tỷ lệ phần trăm |
 |---|---|---|
-| **VALID** | **20** | **87.0%** |
-| **INVALID** | **3** | **13.0%** |
+| **VALID** | **22** | **88.0%** |
+| **INVALID** | **3** | **12.0%** |
 | **INCOMPLETE** | **0** | **0.0%** |
-| **Tổng số tác vụ kiểm định** | **23** | **100.0%** |
+| **Tổng số tác vụ kiểm định** | **25** | **100.0%** |
 
 #### Đánh giá Tổng quan & Phân tích Nguyên nhân Lỗi AI (AI Error Root-Cause Analysis):
 
-1. **Phân tích các tác vụ Đánh giá INVALID (3/23 tác vụ = 13.0%):**
+1. **Phân tích các tác vụ Đánh giá INVALID (3/25 tác vụ = 12.0%):**
    * **Tác vụ 4 (`INVALID`):** AI phán đoán chưa tối ưu về mặt kiến trúc màn hình khi gộp chung màn hình Danh sách (List) và Chi tiết (Detail) phía User Side thành 1 màn hình D2 duy nhất trong `Report.md`. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 10 để ép AI phân tách thành D2 (List) và D3 (Detail), nâng phạm vi kiểm thử lên 5 màn hình.
    * **Tác vụ 11 (`INVALID`):** AI mắc 2 sai sót: (1) Phán đoán nhầm tiêu chí `IA-02-01` là `Fail` (báo sai lỗi `USA-01` thiếu dấu `*` trong khi thực tế label có dấu `*` màu đỏ rõ ràng); (2) Quên ghi file ảnh PNG ra ổ đĩa mà mới dừng ở log response. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 12 (bắt ghi file ảnh PNG qua Python) và Tác vụ 13 (bắt sửa `IA-02-01` thành `Pass` & xóa `USA-01`).
    * **Tác vụ 22 (`INVALID`):** AI dùng sai định dạng URL `file:///d:/...` trong bảng Markdown khiến trình xem Markdown Preview không kích hoạt link mở ảnh được. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 23 để chuyển đổi về định dạng đường dẫn tương đối chuẩn `./bug_screenshot/filename.png`.

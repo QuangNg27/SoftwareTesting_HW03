@@ -153,3 +153,13 @@ chỉnh screenshot ref bấm được
 ```text
 không bấm được
 ```
+
+### [27-07-2026 20:00] | Gemini
+```text
+rà soát lại item nào fail ở checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] rồi kiểm tra @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] xem có thiếu không thì điền thêm
+```
+
+### [27-07-2026 20:33] | Gemini
+```text
+điền thêm vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] cho item IA-04-13 của section 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
+```
