@@ -678,18 +678,43 @@ thế tôi xóa @[skill] được rồi nhỉ
 
 ---
 
+#### **Tác vụ 18: Tùy chỉnh Section 1.1 trong Report.md Tập trung Chuyên sâu Phía Người dùng (User Side)**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 27-07-2026
+  - **Prompt gốc:**
+```text
+tùy chỉnh lại section 1.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] chỉ còn phía User thôi
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã tinh chỉnh lại nội dung Mục 1.1 trong Report.md, tập trung chuyên sâu 100% vào phạm vi Giao diện Người dùng (User Side) đối với Scenario D, loại bỏ toàn bộ các mô tả chi tiết thao tác riêng phía Admin.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên rà soát và xác nhận Section 1.1 trong Report.md đã hoàn toàn tập trung vào trải nghiệm phía User.
+
+---
+
 ### Overall AI Accuracy Ratio
 
 | Trạng thái | Số lượng | Tỷ lệ phần trăm |
 |---|---|---|
-| **VALID** | **15** | **88.2%** |
-| **INVALID** | **2** | **11.8%** |
+| **VALID** | **16** | **88.9%** |
+| **INVALID** | **2** | **11.1%** |
 | **INCOMPLETE** | **0** | **0.0%** |
-| **Tổng số tác vụ kiểm định** | **17** | **100.0%** |
+| **Tổng số tác vụ kiểm định** | **18** | **100.0%** |
 
 #### Đánh giá Tổng quan & Phân tích Nguyên nhân Lỗi AI (AI Error Root-Cause Analysis):
 
-1. **Phân tích các tác vụ Đánh giá INVALID (2/17 tác vụ = 11.8%):**
+1. **Phân tích các tác vụ Đánh giá INVALID (2/18 tác vụ = 11.1%):**
    * **Tác vụ 4 (`INVALID`):** AI phán đoán chưa tối ưu về mặt kiến trúc màn hình khi gộp chung màn hình Danh sách (List) và Chi tiết (Detail) phía User Side thành 1 màn hình D2 duy nhất trong `Report.md`. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 10 để ép AI phân tách thành D2 (List) và D3 (Detail), nâng phạm vi kiểm thử lên 5 màn hình.
    * **Tác vụ 11 (`INVALID`):** AI mắc 2 sai sót: (1) Phán đoán nhầm tiêu chí `IA-02-01` là `Fail` (báo sai lỗi `USA-01` thiếu dấu `*` trong khi thực tế label có dấu `*` màu đỏ rõ ràng); (2) Quên ghi file ảnh PNG ra ổ đĩa mà mới dừng ở log response. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 12 (bắt ghi file ảnh PNG qua Python) và Tác vụ 13 (bắt sửa `IA-02-01` thành `Pass` & xóa `USA-01`).
 

@@ -123,3 +123,8 @@ set cho 2 skill kia luôn
 ```text
 thế tôi xóa @[skill] được rồi nhỉ
 ```
+
+### [27-07-2026 14:12] | Gemini
+```text
+tùy chỉnh lại section 1.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] chỉ còn phía User thôi
+```
