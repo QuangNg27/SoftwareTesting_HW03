@@ -52,7 +52,7 @@ Nếu tiêu chí được đánh giá là **`Fail`**:
 
 ### Bước 4: Cập nhật Báo cáo Báo cáo Chính (`Report.md`)
 - **Tập trung Phạm vi:** Chỉ cập nhật Bảng thực thi của màn hình được yêu cầu.
-- **Quy tắc Cột Ghi Chú Lỗi (Notes Rule):**
+- **Quy tắc Cột Ghi Chú (Notes Rule):**
   - đối với các tiêu chí đánh giá là **`Pass`**: Bắt buộc để trống cột *Ghi Chú Lỗi (Notes)*.
   - đối với các tiêu chí đánh giá là **`Fail`** hoặc **`NA`**: Giữ nguyên nội dung ghi chú chi tiết mô tả lỗi hoặc lý do không áp dụng.
 - **Tuyệt đối tuân thủ:** Không thay đổi bất kỳ mục hoặc bảng kiểm thử của các màn hình khác trong `Report.md`.

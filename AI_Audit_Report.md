@@ -753,20 +753,96 @@ cập nhật skill phần ghi chú như vậy (nếu có)
 
 ---
 
+#### **Tác vụ 21: Bổ sung Báo cáo Bug & Usability cho Tiêu chí IA-04-01 (BUG-02) và IA-04-10 (USA-03)**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 27-07-2026
+  - **Prompt gốc:**
+```text
+thêm báo cáo bug cho IA-04-01, IA-04-10
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã cập nhật Bảng nhật ký lỗi bug_and_usability_findings_log.md đầy đủ 9 cột tiêu chuẩn: bổ sung BUG-02 cho tiêu chí IA-04-01 (thiếu Toast thông báo thành công sau khi gửi form) và USA-03 cho tiêu chí IA-04-10 (thiếu Toast/cảnh báo ngắt kết nối mạng offline).
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên rà soát và xác nhận danh mục lỗi trong nhật ký bug_and_usability_findings_log.md đã khớp 100% với bảng thực thi kiểm thử 2.1.
+
+---
+
+#### **Tác vụ 22: Chuẩn hóa Định dạng Cột Screenshot ref trong Nhật ký Lỗi thành Liên kết Markdown Có thể Click**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 27-07-2026
+  - **Prompt gốc:**
+```text
+chỉnh screenshot ref bấm được
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: Ban đầu AI sử dụng định dạng URL tuyệt đối file:///d:/.../filename.png gây ra tình trạng liên kết bị vô hiệu hóa hoặc không phản hồi trên giao diện xem Markdown Preview của VS Code / Antigravity. Người dùng sau đó phải thông báo phản hồi ở Prompt 30 ('không bấm được').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI chuyển đổi định dạng đường dẫn thành chuẩn tương đối Markdown [filename.png](./bug_screenshot/filename.png) tương thích 100% với trình xem Markdown.
+
+---
+
+#### **Tác vụ 23: Khắc phục Định dạng Đường dẫn Ảnh Minh chứng trong Nhật ký Lỗi thành Đường dẫn Tương đối Chuẩn `./bug_screenshot/filename.png`**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 27-07-2026
+  - **Prompt gốc:**
+```text
+không bấm được
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã tiếp thu phản hồi sửa lỗi từ sinh viên ở Tác vụ 22, cập nhật toàn bộ cột Screenshot ref trong bug_and_usability_findings_log.md thành dạng liên kết tương đối chuẩn [filename.png](./bug_screenshot/filename.png), giúp người dùng click trực tiếp (hoặc Ctrl+Click) mở ngay tệp ảnh PNG trên VS Code / Antigravity.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên kiểm tra và xác nhận tất cả các liên kết ảnh minh chứng trong bug_and_usability_findings_log.md đã click mở tệp ảnh PNG thành công 100%.
+
+---
+
 ### Overall AI Accuracy Ratio
 
 | Trạng thái | Số lượng | Tỷ lệ phần trăm |
 |---|---|---|
-| **VALID** | **18** | **90.0%** |
-| **INVALID** | **2** | **10.0%** |
+| **VALID** | **20** | **87.0%** |
+| **INVALID** | **3** | **13.0%** |
 | **INCOMPLETE** | **0** | **0.0%** |
-| **Tổng số tác vụ kiểm định** | **20** | **100.0%** |
+| **Tổng số tác vụ kiểm định** | **23** | **100.0%** |
 
 #### Đánh giá Tổng quan & Phân tích Nguyên nhân Lỗi AI (AI Error Root-Cause Analysis):
 
-1. **Phân tích các tác vụ Đánh giá INVALID (2/20 tác vụ = 10.0%):**
+1. **Phân tích các tác vụ Đánh giá INVALID (3/23 tác vụ = 13.0%):**
    * **Tác vụ 4 (`INVALID`):** AI phán đoán chưa tối ưu về mặt kiến trúc màn hình khi gộp chung màn hình Danh sách (List) và Chi tiết (Detail) phía User Side thành 1 màn hình D2 duy nhất trong `Report.md`. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 10 để ép AI phân tách thành D2 (List) và D3 (Detail), nâng phạm vi kiểm thử lên 5 màn hình.
    * **Tác vụ 11 (`INVALID`):** AI mắc 2 sai sót: (1) Phán đoán nhầm tiêu chí `IA-02-01` là `Fail` (báo sai lỗi `USA-01` thiếu dấu `*` trong khi thực tế label có dấu `*` màu đỏ rõ ràng); (2) Quên ghi file ảnh PNG ra ổ đĩa mà mới dừng ở log response. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 12 (bắt ghi file ảnh PNG qua Python) và Tác vụ 13 (bắt sửa `IA-02-01` thành `Pass` & xóa `USA-01`).
+   * **Tác vụ 22 (`INVALID`):** AI dùng sai định dạng URL `file:///d:/...` trong bảng Markdown khiến trình xem Markdown Preview không kích hoạt link mở ảnh được. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 23 để chuyển đổi về định dạng đường dẫn tương đối chuẩn `./bug_screenshot/filename.png`.
 
 2. **Bài học kinh nghiệm & Vai trò Giám sát của Sinh viên (Human-in-the-loop Supervision):**
    - Báo cáo kiểm định thể hiện rõ nét vai trò phản biện, giám sát chặt chẽ của sinh viên đối với đầu ra của AI. Các phản hồi kịp thời của sinh viên giúp điều chỉnh AI từ các phán đoán chủ quan/sai sót ban đầu trở về kết quả kiểm thử chính xác và khách quan 100% theo đúng thực tế SUT live.

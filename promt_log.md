@@ -138,3 +138,18 @@ cập nhật bảng checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting
 ```text
 cập nhật skill phần ghi chú như vậy (nếu có)
 ```
+
+### [27-07-2026 15:36] | Gemini
+```text
+thêm báo cáo bug cho IA-04-01, IA-04-10
+```
+
+### [27-07-2026 15:37] | Gemini
+```text
+chỉnh screenshot ref bấm được
+```
+
+### [27-07-2026 15:38] | Gemini
+```text
+không bấm được
+```
