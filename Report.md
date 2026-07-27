@@ -2,7 +2,7 @@
 ## HW03 – GUI & Usability Testing on EMS (Event Management System)
 
 * **Môn học:** Kiểm thử Phần mềm
-* **Sinh viên:** Nguyễn Minh Quang
+* **Sinh viên:** Nguyễn Minh Quang - 23127462
 * **Hệ thống kiểm thử (SUT):** EMS (Event Management System) - https://promoter-starboard-prude.ngrok-free.dev/
 * **Kịch bản lựa chọn (Chosen Scenario):** **Scenario D — User requests Support and Admin resolves it**
 
