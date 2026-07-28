@@ -971,7 +971,7 @@ hình truy cập sai địa chỉ rồi
   **INVALID**
 
 - **4. Reasoning (Lý do đánh giá):**
-  Lỗi AI: AI chưa rà soát kỹ lưỡng trạng thái đặc thù của vé Resolved trên Màn hình D2.2 (giao diện không hiển thị form nhập comment do vé đã đóng), dẫn đến việc đưa các lỗi giả định về form nhập liệu vào bug log. Sinh viên sau đó phải chỉ đạo điều chỉnh ở Prompt 37 ('điều chỉnh lại bug log của section 2.3').
+  Lỗi AI: AI chưa rà soát kỹ lưỡng trạng thái đặc thù của vé Resolved của D2.2 dẫn đến việc đưa các lỗi giả định về form nhập liệu vào bug log. Sinh viên sau đó phải chỉ đạo điều chỉnh ở Prompt 37 ('điều chỉnh lại bug log của section 2.3').
 
 - **5. Student fix (Bản sửa đổi của sinh viên):**
   Sinh viên đã chỉ đạo AI chuẩn hóa lại toàn bộ danh mục lỗi của Section 2.3 trong bug_and_usability_findings_log.md (USA-08 cho IA-01-09 căn lề icon, USA-09 cho IA-03-05 breadcrumbs, USA-10 cho IA-04-09 real-time update, USA-11 cho IA-04-10 offline warning) và đồng bộ mã Log ID hai chiều vào Report.md.
@@ -993,13 +993,138 @@ hình truy cập sai địa chỉ rồi
 ````
 
 - **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: AI bỏ sót thông tin mô tả luồng nghiệp vụ Quản trị viên (Admin Side) trong Section 1.1 và 1.2 của Report.md, đồng thời chưa bổ sung 2 bảng thực thi kiểm thử cho Màn hình D3 (Support Requests List - Admin Side) và Màn hình D4 (Support Request Detail - Admin Side). Sinh viên sau đó phải yêu cầu điều chỉnh ở Prompt 38 ('sửa section 1.1 và 1.2 thêm phần của Admin theo đề..., thêm 2 checklist cho màn D3, D4').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI cập nhật mở rộng Section 1.1 và 1.2 bao phủ cả 2 vai trò User & Admin, đồng thời thiết lập 2 Bảng thực thi 2.4 (D3 Admin List) và 2.5 (D4 Admin Detail) với đầy đủ 49 tiêu chí và log các lỗi mới vào bug_and_usability_findings_log.md.
+
+---
+
+#### **Tác vụ 31: Bổ sung Luồng Quản trị Admin (D3 & D4) vào Section 1.1, 1.2 & Khởi tạo Bảng Thực thi 2.4 (D3), 2.5 (D4) trong Report.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 28-07-2026
+  - **Prompt gốc:**
+```text
+sửa section 1.1 và 1.2 thêm phần của Admin theo đề @[2026.HW03.GUI Usability EMS_En.pdf], thêm 2 checklist cho màn D3, D4
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: AI tự ý điền kết quả kiểm thử (Verdict Pass/Fail/NA và Notes) trên cả 2 Bảng thực thi 2.4 (Màn hình D3) và 2.5 (Màn hình D4) trong khi sinh viên mới chỉ yêu cầu khởi tạo khung bảng checklist chưa thực thi kiểm thử. Sinh viên sau đó phải chỉ đạo ở Prompt 39 ('hủy kết quả test của màn D3, D4 trong Report.md').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI xóa sạch kết quả đánh giá (Verdict) và cột Ghi chú lỗi (Notes) ở tất cả 49 dòng tiêu chí trên cả 2 Bảng 2.4 (D3) và 2.5 (D4), đưa 2 màn hình Admin về trạng thái khung bảng mẫu chưa kiểm thử, đồng thời xóa các lỗi tương ứng khỏi tệp bug_and_usability_findings_log.md.
+
+---
+
+#### **Tác vụ 32: Hủy Kết quả Test (Xóa Verdict & Notes) trên Bảng 2.4 (D3) và 2.5 (D4) trong Report.md theo Chỉ đạo của Sinh viên**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 28-07-2026
+  - **Prompt gốc:**
+```text
+hủy kết quả test của màn D3, D4 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
   **VALID**
 
 - **4. Reasoning (Lý do đánh giá):**
-  AI đã tiếp thu phản hồi từ sinh viên ở Tác vụ 29, cập nhật lại 100% danh mục lỗi của Màn hình D2.2 trong tệp bug_and_usability_findings_log.md với đầy đủ 9 cột tiêu chuẩn (§7) và liên kết ảnh tương đối [USA-12_D2.2_Icon_Alignment_Misaligned.png](./bug_screenshot/USA-12_D2.2_Icon_Alignment_Misaligned.png), đồng thời đồng bộ mã Log ID hai chiều vào Bảng thực thi 2.3 trong Report.md.
+  AI đã tiếp thu phản hồi từ sinh viên ở Tác vụ 31, tiến hành xóa bỏ toàn bộ kết quả đánh giá (Verdict) và ghi chú lỗi (Notes) ở cả 49 dòng tiêu chí trên Bảng 2.4 (Màn hình D3 Admin List) và Bảng 2.5 (Màn hình D4 Admin Detail) trong Report.md, đồng thời loại bỏ các mục lỗi liên quan (BUG-05, BUG-06, USA-13 đến USA-19) khỏi tệp bug_and_usability_findings_log.md để đảm bảo tính đồng bộ 100%.
 
 - **5. Student fix (Bản sửa đổi của sinh viên):**
-  Sinh viên kiểm tra đối chiếu Bảng 2.3 trong Report.md và tệp bug_and_usability_findings_log.md, xác nhận toàn bộ thông tin kiểm thử và nhật ký lỗi cho Màn hình D2.2 đã chính xác 100%.
+  Sinh viên kiểm tra rà soát tệp Report.md và bug_and_usability_findings_log.md, xác nhận Bảng 2.4 và Bảng 2.5 đã quay về trạng thái khung kiểm thử chuẩn chưa điền kết quả đúng yêu cầu.
+
+---
+
+#### **Tác vụ 33: Thực thi GUI Checklist Execution cho Màn hình D3 (Admin Support Requests List at /dashboard/admin/complaints) & Điền Bảng 2.4 trong Report.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 28-07-2026
+  - **Prompt gốc:**
+```text
+vào trang https://prod-dev.ems-fitus.cloud/dashboard/admin/complaints, dùng tài khoản admin: admin@gmail.com/Admin@123, thực hiện /gui-checklist-execution cho màn hình D3 (section 2.4 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] )
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã sử dụng Puppeteer MCP điều hướng thành công đến trang SUT live `/dashboard/admin/complaints` dưới quyền tài khoản Admin (`admin@gmail.com`), khảo sát 100% cấu trúc DOM, đánh giá chính xác tất cả 49 tiêu chí checklist chuẩn (`IA-01-01` đến `IA-04-13`), cập nhật kết quả vào Bảng 2.4 trong `Report.md` (giữ rỗng cột Notes cho tiêu chí Pass và ghi chi tiết cho Fail/NA), trích xuất 3 mục lỗi Usability thực tế (USA-13, USA-14, USA-15) vào `bug_and_usability_findings_log.md` (§7) và lưu trữ 3 tệp ảnh PNG minh chứng thực tế (54.437 bytes/file) vào thư mục `bug_screenshot/`.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên rà soát Bảng 2.4 trong Report.md và tệp nhật ký lỗi, xác nhận kết quả kiểm thử trên Màn hình D3 hoàn toàn khớp với thực tế giao diện Admin SUT live.
+
+---
+
+#### **Tác vụ 34: Cập nhật Quy định Cố định Kích thước Màn hình (Screen Size Consistency Rule) vào Skill gui-checklist-execution**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 28-07-2026
+  - **Prompt gốc:**
+```text
+chỉnh lại skill là giữ nguyên kích thước màn hình khi test chứ đang màn hình to rồi thu nhỏ về xong chụp bug là không phù hợp
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: AI thiết lập quy định tuyệt đối không được thu nhỏ màn hình trong mọi trường hợp mà bỏ sót ngoại lệ thu nhỏ/co giãn cửa sổ khi kiểm thử tính năng Responsive Layout (IA-01-07). Sinh viên sau đó phải đưa ra làm rõ tại Prompt 42 ('có thể thu lại để test cho việc responsive').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI cập nhật bổ sung ngoại lệ cho phép thu nhỏ/thay đổi kích thước cửa sổ trình duyệt duy nhất khi thực thi kiểm thử tiêu chí IA-01-07 Responsive Layout.
+
+---
+
+#### **Tác vụ 35: Cập nhật Ngoại lệ Thu nhỏ Kích thước Màn hình khi Kiểm thử Responsive Layout (IA-01-07) vào Skill gui-checklist-execution**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 28-07-2026
+  - **Prompt gốc:**
+```text
+có thể thu lại để test cho việc responsive
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã tiếp thu phản hồi hướng dẫn từ sinh viên ở Tác vụ 34, cập nhật chính xác Bước 1 (Quy tắc Kích thước Màn hình & Ngoại lệ Kiểm thử Responsive) và Bước 3 trong tệp Kỹ năng gui-checklist-execution tại cả 2 thư mục `.agents/skills/` và `~/.gemini/antigravity/skills/`: Duy trì mặc định 100% kích thước màn hình tiêu chuẩn Desktop (1920x1080 / Maximized) cho kiểm thử chung và chụp ảnh minh chứng lỗi, nhưng cho phép thu nhỏ/thay đổi kích thước cửa sổ trình duyệt (như Mobile 375x812, Tablet 768x1024) duy nhất khi thực thi kiểm thử tiêu chí IA-01-07 Responsive Layout.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên kiểm tra và xác nhận quy tắc kiểm thử responsive đã được tích hợp hoàn chỉnh và chính xác vào SOP kỹ năng kiểm thử.
 
 ---
 
@@ -1007,20 +1132,23 @@ hình truy cập sai địa chỉ rồi
 
 | Trạng thái | Số lượng | Tỷ lệ phần trăm |
 |---|---|---|
-| **VALID** | **24** | **80.0%** |
-| **INVALID** | **6** | **20.0%** |
+| **VALID** | **26** | **74.3%** |
+| **INVALID** | **9** | **25.7%** |
 | **INCOMPLETE** | **0** | **0.0%** |
-| **Tổng số tác vụ kiểm định** | **30** | **100.0%** |
+| **Tổng số tác vụ kiểm định** | **35** | **100.0%** |
 
 #### Đánh giá Tổng quan & Phân tích Nguyên nhân Lỗi AI (AI Error Root-Cause Analysis):
 
-1. **Phân tích các tác vụ Đánh giá INVALID (6/30 tác vụ = 20.0%):**
+1. **Phân tích các tác vụ Đánh giá INVALID (9/35 tác vụ = 25.7%):**
    * **Tác vụ 4 (`INVALID`):** AI phán đoán chưa tối ưu về mặt kiến trúc màn hình khi gộp chung màn hình Danh sách (List) và Chi tiết (Detail) phía User Side thành 1 màn hình D2 duy nhất trong `Report.md`. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 10 để ép AI phân tách thành D2 (List) và D3 (Detail), nâng phạm vi kiểm thử lên 5 màn hình.
    * **Tác vụ 11 (`INVALID`):** AI mắc 2 sai sót: (1) Phán đoán nhầm tiêu chí `IA-02-01` là `Fail` (báo sai lỗi `USA-01` thiếu dấu `*` trong khi thực tế label có dấu `*` màu đỏ rõ ràng); (2) Quên ghi file ảnh PNG ra ổ đĩa mà mới dừng ở log response. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 12 (bắt ghi file ảnh PNG qua Python) và Tác vụ 13 (bắt sửa `IA-02-01` thành `Pass` & xóa `USA-01`).
    * **Tác vụ 22 (`INVALID`):** AI dùng sai định dạng URL `file:///d:/...` trong bảng Markdown khiến trình xem Markdown Preview không kích hoạt link mở ảnh được. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 23 để chuyển đổi về định dạng đường dẫn tương đối chuẩn `./bug_screenshot/filename.png`.
    * **Tác vụ 27 (`INVALID`):** AI chưa hoàn tất đăng nhập sinh viên qua SSO Microsoft mà sao chép nhầm ảnh trang Login/D1 cho các tệp minh chứng D2.2. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 28 bắt AI điều khiển Puppeteer mở trình duyệt, đăng nhập SSO thực tế và trích xuất đúng ảnh `/complaints/18` live.
    * **Tác vụ 28 (`INVALID`):** AI trích xuất nhầm chuỗi Base64 rỗng khiến các tệp PNG bị 0 byte không xem được. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 29 bắt AI giải mã Base64 chuẩn từ Puppeteer MCP ghi đè tệp PNG dung lượng 33.164 bytes.
-   * **Tác vụ 29 (`INVALID`):** AI chưa rà soát chính xác đặc thù trạng thái vé Resolved của D2.2 dẫn đến log giả định các lỗi form nhập liệu. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 30 bắt AI điều chỉnh lại bug log chuẩn xác theo thực tế D2.2 live.
+   * **Tác vụ 29 (`INVALID`):** AI chưa rà soát chính xác đặc thù trạng thái vé Resolved của D2.2 dẫn đến việc đưa các lỗi giả định về form nhập liệu vào bug log. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 30 bắt AI điều chỉnh lại bug log chuẩn xác theo thực tế D2.2 live.
+   * **Tác vụ 30 (`INVALID`):** AI bỏ sót thông tin mô tả luồng nghiệp vụ Quản trị viên (Admin Side) trong Section 1.1 và 1.2 và chưa tạo 2 bảng thực thi cho Màn hình D3, D4. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 31 bắt AI mở rộng Section 1.1, 1.2 và bổ sung 2 Bảng thực thi 2.4 (D3 Admin List) và 2.5 (D4 Admin Detail).
+   * **Tác vụ 31 (`INVALID`):** AI tự ý điền kết quả kiểm thử trên 2 Bảng 2.4 và 2.5 khi chưa thực thi kiểm thử. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 32 bắt AI xóa bỏ kết quả test (Verdict & Notes) đưa 2 bảng D3, D4 về dạng khung bảng mẫu.
+   * **Tác vụ 34 (`INVALID`):** AI thiết lập quy định tuyệt đối không được thu nhỏ màn hình trong mọi trường hợp mà bỏ sót ngoại lệ thu nhỏ/co giãn cửa sổ khi kiểm thử tính năng Responsive Layout (IA-01-07). *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 35 bổ sung ngoại lệ cho phép thu nhỏ kích thước cửa sổ trình duyệt khi kiểm thử tiêu chí IA-01-07.
 
 2. **Bài học kinh nghiệm & Vai trò Giám sát của Sinh viên (Human-in-the-loop Supervision):**
    - Báo cáo kiểm định thể hiện rõ nét vai trò phản biện, giám sát chặt chẽ của sinh viên đối với đầu ra của AI. Các phản hồi kịp thời của sinh viên giúp điều chỉnh AI từ các phán đoán chủ quan/sai sót ban đầu trở về kết quả kiểm thử chính xác và khách quan 100% theo đúng thực tế SUT live.

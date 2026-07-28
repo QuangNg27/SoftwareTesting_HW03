@@ -1,6 +1,6 @@
 ---
 name: gui-checklist-execution
-description: Automatically performs GUI Checklist Execution for EMS SUT screens, evaluates 48 criteria (IA-01-01 to IA-04-12), logs defects into bug_and_usability_findings_log.md, saves PNG screenshots to bug_screenshot/, updates Report.md (leaving Notes empty for Pass items and keeping Notes for Fail/NA items), and maintains AI_Audit_Report.md and promt_log.md. Activate/trigger this skill whenever the user asks to test an EMS screen, run a GUI checklist execution, or log bugs.
+description: Automatically performs GUI Checklist Execution for EMS SUT screens, evaluates 48 criteria (IA-01-01 to IA-04-12), logs defects into bug_and_usability_findings_log.md, saves PNG screenshots to bug_screenshot/, updates Report.md (leaving Notes empty for Pass items and keeping Notes for Fail/NA items), maintains fixed 1920x1080 screen size during testing and screenshotting (allows resizing solely for IA-01-07 Responsive testing), and maintains AI_Audit_Report.md and promt_log.md. Activate/trigger this skill whenever the user asks to test an EMS screen, run a GUI checklist execution, or log bugs.
 ---
 
 # Hướng dẫn Kỹ năng: Thực thi Kiểm thử GUI Checklist (GUI Checklist Execution Skill) - HW03 EMS
@@ -21,17 +21,24 @@ AI Agent phải luôn sử dụng đầy đủ **48 tiêu chí kiểm thử tiê
 ## 2. Quy trình Thực thi Kiểm thử Live (Execution Protocol)
 
 ### Bước 1: Điều hướng & Khảo sát DOM qua Puppeteer MCP
-- **Khởi chạy Puppeteer:** Bắt buộc sử dụng Puppeteer MCP với tham số Profile cá nhân:
+- **Khởi chạy Puppeteer:** Bắt buộc sử dụng Puppeteer MCP với tham số Profile cá nhân và cố định kích thước màn hình toàn màn hình Desktop:
   ```json
   {
     "allowDangerous": true,
     "launchOptions": {
       "headless": false,
-      "args": ["--user-data-dir=C:\\Users\\admin\\.gemini\\antigravity\\puppeteer_profile", "--no-sandbox"]
+      "defaultViewport": null,
+      "executablePath": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+      "userDataDir": "C:\\Users\\admin\\.gemini\\antigravity\\puppeteer_profile",
+      "args": ["--start-maximized", "--window-size=1920,1080", "--no-sandbox"]
     },
     "url": "<Target_Screen_URL>"
   }
   ```
+- **Quy tắc Kích thước Màn hình (Screen Size Consistency & Responsive Testing Rule):**
+  - **Mặc định Desktop:** Duy trì 100% kích thước màn hình tiêu chuẩn Desktop (`1920x1080` / Maximized) trong suốt quá trình kiểm thử chung và chụp ảnh minh chứng lỗi.
+  - **Ngoại lệ Kiểm thử Responsive:** Cho phép thu nhỏ/thay đổi kích thước cửa sổ trình duyệt (ví dụ: Mobile 375x812, Tablet 768x1024) **duy nhất khi thực thi tiêu chí Responsive Layout** để kiểm tra khả năng co giãn và đáp ứng của giao diện.
+  - **Khôi phục Trạng thái:** Ngay sau khi hoàn tất kiểm thử tiêu chí Responsive Layout, trình duyệt phải được khôi phục về kích thước chuẩn Desktop `1920x1080` trước khi chụp ảnh hoặc thực hiện các kiểm thử tiếp theo.
 - **Khảo sát DOM:** Sử dụng `puppeteer_evaluate` trích xuất thông tin thực tế: H1-H4, Inputs, Selects, Textareas, Labels, Buttons, Links, Toast notifications, ARIA labels và thuộc tính HTML.
 
 ### Bước 2: Đánh giá Tiêu chí (Verdict Assignment Rules)
@@ -46,7 +53,8 @@ Nếu tiêu chí được đánh giá là **`Fail`**:
    - Hệ thống chạy sai spec/kỹ thuật -> Ghi nhận là **`Bug`** (`BUG-xx`).
    - Hệ thống chạy đúng spec nhưng thao tác khó khăn -> Ghi nhận là **`Usability`** (`USA-xx`).
 2. **Cập nhật Nhật ký Lỗi:** Ghi 9 cột tiêu chuẩn vào [bug_and_usability_findings_log.md](file:///d:/NAM_3/HK3/KTPM/HW03/SoftwareTesting_HW03/bug_and_usability_findings_log.md).
-3. **Lưu trữ File Ảnh PNG:**
+3. **Lưu trữ File Ảnh PNG Minh chứng:**
+   - Đảm bảo trình duyệt đang ở đúng kích thước quy định (1920x1080 cho lỗi chung hoặc kích thước responsive cụ thể cho lỗi IA-01-07).
    - Chụp Base64 bằng `puppeteer_screenshot` (với `encoded: true`).
    - Sử dụng script Python `save_images.py` decode và lưu file ảnh PNG vật lý vào thư mục `d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_screenshot\<BUG_ID>_<Screen>_<Name>.png`.
 

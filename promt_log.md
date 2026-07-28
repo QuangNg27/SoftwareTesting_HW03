@@ -188,3 +188,28 @@ hình truy cập sai địa chỉ rồi
 ```text
 điều chỉnh lại bug log của section 2.3
 ```
+
+### [28-07-2026 21:45] | Gemini
+```text
+sửa section 1.1 và 1.2 thêm phần của Admin theo đề @[2026.HW03.GUI Usability EMS_En.pdf], thêm 2 checklist cho màn D3, D4
+```
+
+### [28-07-2026 21:48] | Gemini
+```text
+hủy kết quả test của màn D3, D4 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
+```
+
+### [28-07-2026 22:09] | Gemini
+```text
+vào trang https://prod-dev.ems-fitus.cloud/dashboard/admin/complaints, dùng tài khoản admin: admin@gmail.com/Admin@123, thực hiện /gui-checklist-execution cho màn hình D3 (section 2.4 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] )
+```
+
+### [28-07-2026 22:13] | Gemini
+```text
+chỉnh lại skill là giữ nguyên kích thước màn hình khi test chứ đang màn hình to rồi thu nhỏ về xong chụp bug là không phù hợp
+```
+
+### [28-07-2026 22:14] | Gemini
+```text
+có thể thu lại để test cho việc responsive
+```
