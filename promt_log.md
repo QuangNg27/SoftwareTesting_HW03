@@ -163,3 +163,28 @@ rà soát lại item nào fail ở checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\
 ```text
 điền thêm vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] cho item IA-04-13 của section 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
 ```
+
+### [28-07-2026 20:05] | Gemini
+```text
+log bug cho section 2.2 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
+```
+
+### [28-07-2026 21:02] | Gemini
+```text
+truy cập đây https://prod-dev.ems-fitus.cloud/complaints/18, thực hiện GUI checklist execution dùng skill  (có lỗi thì chụp vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_screenshot] )  đã có cho section 2.3 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
+```
+
+### [28-07-2026 21:06] | Gemini
+```text
+hình truy cập sai địa chỉ rồi
+```
+
+### [28-07-2026 21:09] | Gemini
+```text
+ảnh chụp không bật lên được
+```
+
+### [28-07-2026 21:21] | Gemini
+```text
+điều chỉnh lại bug log của section 2.3
+```
