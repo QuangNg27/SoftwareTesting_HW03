@@ -213,3 +213,13 @@ chỉnh lại skill là giữ nguyên kích thước màn hình khi test chứ �
 ```text
 có thể thu lại để test cho việc responsive
 ```
+
+### [29-07-2026 20:49] | Gemini
+```text
+cập bug log cho item nào fail của checklist section 2.5 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] (không cần chạy test)
+```
+
+### [29-07-2026 20:53] | Gemini
+```text
+tạo sẵn đường link ảnh cho các bug vừa add cho tôi @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md]
+```
