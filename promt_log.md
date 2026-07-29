@@ -223,3 +223,13 @@ cập bug log cho item nào fail của checklist section 2.5 @[d:\NAM_3\HK3\KTPM
 ```text
 tạo sẵn đường link ảnh cho các bug vừa add cho tôi @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md]
 ```
+
+### [29-07-2026 21:21] | Gemini
+```text
+cập nhật tên màn hình trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] ghi rõ ra chứ đừng ghi mã
+```
+
+### [29-07-2026 21:23] | Gemini
+```text
+mấy url có số thì để là [id]
+```

@@ -1168,13 +1168,63 @@ tạo sẵn đường link ảnh cho các bug vừa add cho tôi @[d:\NAM_3\HK3\
 ````
 
 - **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: AI sử dụng mã màn hình viết tắt ('Screen D1', 'Screen D4') trong cột Scenario/Screen thay vì mô tả tên tiếng Việt và đường dẫn URL đầy đủ của màn hình, dẫn đến sinh viên phải chỉ đạo điều chỉnh ở Prompt 45 ('cập nhật tên màn hình... ghi rõ ra chứ đừng ghi mã').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI thay thế mã viết tắt bằng tên màn hình mô tả rõ ràng tiếng Việt kèm đường dẫn URL chính xác cho toàn bộ 22 mục lỗi trong tệp bug_and_usability_findings_log.md.
+
+---
+
+#### **Tác vụ 38: Chuẩn hóa Tên Màn hình Đầy đủ (Explicit Screen Names) trong bug_and_usability_findings_log.md Thay cho Mã Viết tắt**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 29-07-2026
+  - **Prompt gốc:**
+```text
+cập nhật tên màn hình trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] ghi rõ ra chứ đừng ghi mã
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: AI để số ID cụ thể '/complaints/18' trong URL thay vì dùng tham số đại diện '[id]', dẫn đến sinh viên phải chỉ đạo điều chỉnh ở Prompt 46 ('mấy url có số thì để là [id]').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI thay thế toàn bộ các số ID cụ thể trong URL thành tham số đại diện `[id]` cho tất cả các đường dẫn chi tiết trong tệp bug_and_usability_findings_log.md.
+
+---
+
+#### **Tác vụ 39: Chuẩn hóa Tham số URL [id] Cho các Đường dẫn Chi tiết trong bug_and_usability_findings_log.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 29-07-2026
+  - **Prompt gốc:**
+```text
+mấy url có số thì để là [id]
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
   **VALID**
 
 - **4. Reasoning (Lý do đánh giá):**
-  AI đã tiếp thu chỉ đạo từ sinh viên ở Tác vụ 36, cập nhật toàn bộ cột Screenshot ref cho 6 mục lỗi Màn hình D4 (BUG-03, USA-16 đến USA-20) thành định dạng liên kết tương đối chuẩn Markdown `[filename.png](./bug_screenshot/filename.png)`, đảm bảo tính nhất quán 100% với quy chuẩn báo cáo lỗi (§7).
+  AI đã tiếp thu chỉ đạo từ sinh viên ở Tác vụ 38, cập nhật toàn bộ các đường dẫn URL có chứa số ID cụ thể (như `/complaints/18`, `/dashboard/admin/complaints/18`) thành dạng tham số hóa đại diện `/complaints/[id]` và `/dashboard/admin/complaints/[id]`, cũng như cập nhật các tham chiếu breadcrumb tương ứng thành `Request #[id]`, đảm bảo tính tổng quát 100% cho nhật ký lỗi.
 
 - **5. Student fix (Bản sửa đổi của sinh viên):**
-  Sinh viên kiểm tra và xác nhận cột Screenshot ref trong bug_and_usability_findings_log.md đã đầy đủ các đường dẫn liên kết ảnh sẵn sàng cho việc xem trước và đối chiếu.
+  Sinh viên kiểm tra và xác nhận toàn bộ các đường dẫn URL chi tiết trong bug_and_usability_findings_log.md đã được chuẩn hóa tham số [id] chính xác.
 
 ---
 
@@ -1182,14 +1232,14 @@ tạo sẵn đường link ảnh cho các bug vừa add cho tôi @[d:\NAM_3\HK3\
 
 | Trạng thái | Số lượng | Tỷ lệ phần trăm |
 |---|---|---|
-| **VALID** | **27** | **73.0%** |
-| **INVALID** | **10** | **27.0%** |
+| **VALID** | **27** | **69.2%** |
+| **INVALID** | **12** | **30.8%** |
 | **INCOMPLETE** | **0** | **0.0%** |
-| **Tổng số tác vụ kiểm định** | **37** | **100.0%** |
+| **Tổng số tác vụ kiểm định** | **39** | **100.0%** |
 
 #### Đánh giá Tổng quan & Phân tích Nguyên nhân Lỗi AI (AI Error Root-Cause Analysis):
 
-1. **Phân tích các tác vụ Đánh giá INVALID (10/37 tác vụ = 27.0%):**
+1. **Phân tích các tác vụ Đánh giá INVALID (12/39 tác vụ = 30.8%):**
    * **Tác vụ 4 (`INVALID`):** AI phán đoán chưa tối ưu về mặt kiến trúc màn hình khi gộp chung màn hình Danh sách (List) và Chi tiết (Detail) phía User Side thành 1 màn hình D2 duy nhất trong `Report.md`. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 10 để ép AI phân tách thành D2 (List) và D3 (Detail), nâng phạm vi kiểm thử lên 5 màn hình.
    * **Tác vụ 11 (`INVALID`):** AI mắc 2 sai sót: (1) Phán đoán nhầm tiêu chí `IA-02-01` là `Fail` (báo sai lỗi `USA-01` thiếu dấu `*` trong khi thực tế label có dấu `*` màu đỏ rõ ràng); (2) Quên ghi file ảnh PNG ra ổ đĩa mà mới dừng ở log response. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 12 (bắt ghi file ảnh PNG qua Python) và Tác vụ 13 (bắt sửa `IA-02-01` thành `Pass` & xóa `USA-01`).
    * **Tác vụ 22 (`INVALID`):** AI dùng sai định dạng URL `file:///d:/...` trong bảng Markdown khiến trình xem Markdown Preview không kích hoạt link mở ảnh được. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 23 để chuyển đổi về định dạng đường dẫn tương đối chuẩn `./bug_screenshot/filename.png`.
@@ -1200,6 +1250,8 @@ tạo sẵn đường link ảnh cho các bug vừa add cho tôi @[d:\NAM_3\HK3\
    * **Tác vụ 31 (`INVALID`):** AI tự ý điền kết quả kiểm thử trên 2 Bảng 2.4 và 2.5 khi chưa thực thi kiểm thử. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 32 bắt AI xóa bỏ kết quả test (Verdict & Notes) đưa 2 bảng D3, D4 về dạng khung bảng mẫu.
    * **Tác vụ 34 (`INVALID`):** AI thiết lập quy định tuyệt đối không được thu nhỏ màn hình trong mọi trường hợp mà bỏ sót ngoại lệ thu nhỏ/co giãn cửa sổ khi kiểm thử tính năng Responsive Layout (IA-01-07). *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 35 bổ sung ngoại lệ cho phép thu nhỏ kích thước cửa sổ trình duyệt khi kiểm thử tiêu chí IA-01-07.
    * **Tác vụ 36 (`INVALID`):** AI để N/A ở cột Screenshot ref cho các mục lỗi D4 do sinh viên từng yêu cầu không chạy test chụp ảnh. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 37 bắt AI tạo sẵn các đường dẫn liên kết tương đối chuẩn Markdown `[filename.png](./bug_screenshot/filename.png)` cho cả 6 mục lỗi D4.
+   * **Tác vụ 37 (`INVALID`):** AI sử dụng mã màn hình viết tắt ('Screen D1', 'Screen D4') trong cột Scenario/Screen thay vì mô tả tên tiếng Việt và đường dẫn URL đầy đủ. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 38 bắt AI ghi rõ tên màn hình tiếng Việt chi tiết kèm đường dẫn URL chính xác.
+   * **Tác vụ 38 (`INVALID`):** AI để số ID cụ thể '/complaints/18' trong URL thay vì dùng tham số đại diện '[id]'. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 39 bắt AI chuyển đổi tất cả số ID cụ thể trong đường dẫn URL thành dạng tham số đại diện `[id]`.
 
 2. **Bài học kinh nghiệm & Vai trò Giám sát của Sinh viên (Human-in-the-loop Supervision):**
    - Báo cáo kiểm định thể hiện rõ nét vai trò phản biện, giám sát chặt chẽ của sinh viên đối với đầu ra của AI. Các phản hồi kịp thời của sinh viên giúp điều chỉnh AI từ các phán đoán chủ quan/sai sót ban đầu trở về kết quả kiểm thử chính xác và khách quan 100% theo đúng thực tế SUT live.
