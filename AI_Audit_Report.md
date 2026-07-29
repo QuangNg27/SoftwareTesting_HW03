@@ -1196,10 +1196,10 @@ cập nhật tên màn hình trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03
   **INVALID**
 
 - **4. Reasoning (Lý do đánh giá):**
-  Lỗi AI: AI để số ID cụ thể '/complaints/18' trong URL thay vì dùng tham số đại diện '[id]', dẫn đến sinh viên phải chỉ đạo điều chỉnh ở Prompt 46 ('mấy url có số thì để là [id]').
+  Lỗi AI: AI để số ID cụ thể '/complaints/18' trong URL thay vì dùng tham số đại diện '[id]'. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 39 bắt AI chuyển đổi tất cả số ID cụ thể trong đường dẫn URL thành dạng tham số đại diện `[id]`.
 
 - **5. Student fix (Bản sửa đổi của sinh viên):**
-  Sinh viên đã chỉ đạo AI thay thế toàn bộ các số ID cụ thể trong URL thành tham số đại diện `[id]` cho tất cả các đường dẫn chi tiết trong tệp bug_and_usability_findings_log.md.
+  Sinh viên đã chỉ đạo AI chuyển đổi toàn bộ số ID cụ thể trong đường dẫn URL thành dạng tham số đại diện `[id]`.
 
 ---
 
@@ -1228,18 +1228,196 @@ mấy url có số thì để là [id]
 
 ---
 
+#### **Tác vụ 40: Đọc Đề bài HW03 & Khởi tạo Khung Dàn bài (Outline) cho Task 2 & Task 3 trong Report.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 29-07-2026
+  - **Prompt gốc:**
+```text
+đọc lại đề @[2026.HW03.GUI Usability EMS_En.pdf] ,xem yêu cầu của task 2 và 3 rồi tạo outline trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: Ban đầu AI gộp chung ma trận kiểm thử tương thích các màn hình vào 1 bảng duy nhất trong Section 4.2 thay vì chia riêng từng màn hình 1 bảng, dẫn đến sinh viên phải chỉ đạo điều chỉnh ở Prompt 48 ('bảng ma trận 4.2 chia ra mỗi màn một bảng').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI phân tách Section 4.2 thành 5 bảng ma trận riêng biệt đại diện cho 5 màn hình D1, D2.1, D2.2, D3, D4.
+
+---
+
+#### **Tác vụ 41: Phân tách Ma trận Kiểm thử Tương thích Section 4.2 Thành Các Bảng Riêng biệt Cho Từng Màn hình**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 29-07-2026
+  - **Prompt gốc:**
+```text
+bảng ma trận 4.2 chia ra mỗi màn một bảng
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: AI dùng tên Hệ điều hành, Trình duyệt và Lớp thiết bị dài (Windows 11, Desktop 1920x1080...) thay vì ghi tên ngắn gọn chuẩn hóa theo mẫu đề bài (desktop, tablet, phone; Chrome, Firefox...), dẫn đến sinh viên phải chỉ đạo điều chỉnh ở Prompt 49 ('ghi tên hệ điều hành, browser, device ngắn gọn...').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI chuẩn hóa rút gọn tên OS (Windows, macOS, Android, iOS), Browser (Chrome, Edge, Firefox, Safari, Opera, Samsung Internet) và Device Class (desktop, tablet, phone) cho toàn bộ các bảng trong Section 4.2.
+
+---
+
+#### **Tác vụ 42: Rút gọn Tên Hệ điều hành, Trình duyệt và Lớp Thiết bị theo Mẫu Đề bài HW03 trong Section 4.2**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 29-07-2026
+  - **Prompt gốc:**
+```text
+ghi tên hệ điều hành, browser, device ngắn gọn giống như này thôi  3 operatng systems — e.g. Windows, macOS, and Android or iOS.
+ 5 browsers — e.g. Chrome, Firefox, Safari, Edge, and Opera (or Samsung Internet on
+mobile).
+ 3 device classes — desktop, tablet, and phone.
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: Ban đầu AI vẫn duy trì tổ hợp Android + Chrome trong các bảng ma trận kiểm thử tương thích của Section 4.2, dẫn đến sinh viên phải chỉ đạo loại bỏ ở Prompt 50 ('bỏ trường hợp android + chrome').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI loại bỏ trường hợp kiểm thử Android + Chrome ở cả 5 bảng trong Section 4.2 và cập nhật đánh lại STT từ 1 đến 7 cho mỗi bảng.
+
+---
+
+#### **Tác vụ 43: Loại bỏ Trường hợp Android + Chrome khỏi Các Bảng Ma trận Kiểm thử Tương thích Section 4.2**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 29-07-2026
+  - **Prompt gốc:**
+```text
+bỏ trường hợp android + chrome
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: AI để trình duyệt Samsung Internet cho thiết bị Android tablet trong 5 bảng ma trận tương thích Section 4.2, dẫn đến sinh viên phải chỉ đạo đổi thành Chrome ở Prompt 51 ('đổi samsung internet thành chrome').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI thay thế trình duyệt Samsung Internet thành Chrome cho tổ hợp Android tablet ở cả 5 bảng trong Section 4.2 của Report.md.
+
+---
+
+#### **Tác vụ 44: Chuyển đổi Trình duyệt Samsung Internet Thành Chrome cho Thiết bị Android Tablet trong Section 4.2**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 29-07-2026
+  - **Prompt gốc:**
+```text
+đổi samsung internet thành chrome
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã tiếp thu chỉ đạo từ sinh viên ở Tác vụ 43, cập nhật chuyển đổi trình duyệt từ Samsung Internet thành Chrome cho trường hợp thiết bị Android tablet (dòng STT 6: Android | Chrome | tablet) ở cả 5 bảng ma trận kiểm thử tương thích trong Section 4.2 của Report.md, đồng thời đồng bộ tên tệp ảnh minh chứng tương ứng.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên kiểm tra và xác nhận dòng STT 6 trong cả 5 bảng ma trận tương thích của Section 4.2 đã được chuẩn hóa thành Android | Chrome | tablet.
+
+---
+
+#### **Tác vụ 45: Tinh chỉnh Task 2 trong Report.md Tập trung 100% Phía Người dùng (User Side)**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 29-07-2026
+  - **Prompt gốc:**
+```text
+phần Task 2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]  chỉ cần giữ luồng user thôi
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: Ban đầu AI để đường dẫn URL (/complaints/new, /complaints...) trong quy trình kịch bản Section 3.1 thay vì ghi rõ tên màn hình mô tả tiếng Việt, dẫn đến sinh viên phải chỉ đạo đổi thành tên màn hình ở Prompt 53 ('đổi đường dẫn thành tên màn hình...').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI thay thế các đường dẫn URL bằng tên màn hình tiếng Việt chi tiết (Màn hình Tạo Yêu cầu Hỗ trợ Sinh viên - Screen D1, Màn hình Danh sách - Screen D2.1, Màn hình Chi tiết - Screen D2.2) trong Section 3.1 của Report.md.
+
+---
+
+#### **Tác vụ 46: Chuyển đổi Các Đường dẫn URL Thành Tên Màn hình Mô tả Tiếng Việt trong Section 3.1**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 29-07-2026
+  - **Prompt gốc:**
+```text
+đổi đường dẫn thành tên màn hình (section 3.1 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] )
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã tiếp thu chỉ đạo từ sinh viên ở Tác vụ 45, cập nhật chuyển đổi toàn bộ các đường dẫn URL (`/complaints/new`, `/complaints`, `/complaints/[id]`) trong quy trình kịch bản Section 3.1 của Report.md thành tên mô tả giao diện tiếng Việt rõ ràng: **Màn hình Tạo Yêu cầu Hỗ trợ Sinh viên (Screen D1)**, **Màn hình Danh sách Yêu cầu Hỗ trợ Sinh viên (Screen D2.1)**, và **Màn hình Chi tiết Yêu cầu Hỗ trợ Sinh viên (Screen D2.2)**.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên kiểm tra và xác nhận quy trình kịch bản kiểm thử trong Section 3.1 đã hoàn toàn sử dụng tên màn hình mô tả trực quan thay cho các mã đường dẫn URL.
+
+---
+
 ### Overall AI Accuracy Ratio
 
 | Trạng thái | Số lượng | Tỷ lệ phần trăm |
 |---|---|---|
-| **VALID** | **27** | **69.2%** |
-| **INVALID** | **12** | **30.8%** |
+| **VALID** | **29** | **63.0%** |
+| **INVALID** | **17** | **37.0%** |
 | **INCOMPLETE** | **0** | **0.0%** |
-| **Tổng số tác vụ kiểm định** | **39** | **100.0%** |
+| **Tổng số tác vụ kiểm định** | **46** | **100.0%** |
 
 #### Đánh giá Tổng quan & Phân tích Nguyên nhân Lỗi AI (AI Error Root-Cause Analysis):
 
-1. **Phân tích các tác vụ Đánh giá INVALID (12/39 tác vụ = 30.8%):**
+1. **Phân tích các tác vụ Đánh giá INVALID (17/46 tác vụ = 37.0%):**
    * **Tác vụ 4 (`INVALID`):** AI phán đoán chưa tối ưu về mặt kiến trúc màn hình khi gộp chung màn hình Danh sách (List) và Chi tiết (Detail) phía User Side thành 1 màn hình D2 duy nhất trong `Report.md`. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 10 để ép AI phân tách thành D2 (List) và D3 (Detail), nâng phạm vi kiểm thử lên 5 màn hình.
    * **Tác vụ 11 (`INVALID`):** AI mắc 2 sai sót: (1) Phán đoán nhầm tiêu chí `IA-02-01` là `Fail` (báo sai lỗi `USA-01` thiếu dấu `*` trong khi thực tế label có dấu `*` màu đỏ rõ ràng); (2) Quên ghi file ảnh PNG ra ổ đĩa mà mới dừng ở log response. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 12 (bắt ghi file ảnh PNG qua Python) và Tác vụ 13 (bắt sửa `IA-02-01` thành `Pass` & xóa `USA-01`).
    * **Tác vụ 22 (`INVALID`):** AI dùng sai định dạng URL `file:///d:/...` trong bảng Markdown khiến trình xem Markdown Preview không kích hoạt link mở ảnh được. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 23 để chuyển đổi về định dạng đường dẫn tương đối chuẩn `./bug_screenshot/filename.png`.
@@ -1252,6 +1430,11 @@ mấy url có số thì để là [id]
    * **Tác vụ 36 (`INVALID`):** AI để N/A ở cột Screenshot ref cho các mục lỗi D4 do sinh viên từng yêu cầu không chạy test chụp ảnh. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 37 bắt AI tạo sẵn các đường dẫn liên kết tương đối chuẩn Markdown `[filename.png](./bug_screenshot/filename.png)` cho cả 6 mục lỗi D4.
    * **Tác vụ 37 (`INVALID`):** AI sử dụng mã màn hình viết tắt ('Screen D1', 'Screen D4') trong cột Scenario/Screen thay vì mô tả tên tiếng Việt và đường dẫn URL đầy đủ. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 38 bắt AI ghi rõ tên màn hình tiếng Việt chi tiết kèm đường dẫn URL chính xác.
    * **Tác vụ 38 (`INVALID`):** AI để số ID cụ thể '/complaints/18' trong URL thay vì dùng tham số đại diện '[id]'. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 39 bắt AI chuyển đổi tất cả số ID cụ thể trong đường dẫn URL thành dạng tham số đại diện `[id]`.
+   * **Tác vụ 40 (`INVALID`):** AI gộp chung ma trận kiểm thử tương thích các màn hình vào 1 bảng duy nhất trong Section 4.2. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 41 bắt AI phân tách Section 4.2 thành 5 bảng ma trận riêng biệt đại diện cho 5 màn hình D1, D2.1, D2.2, D3, D4.
+   * **Tác vụ 41 (`INVALID`):** AI dùng tên Hệ điều hành, Trình duyệt và Lớp thiết bị dài (Windows 11, Desktop 1920x1080...) thay vì ghi tên ngắn gọn chuẩn hóa theo mẫu đề bài (desktop, tablet, phone; Chrome, Firefox...). *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 42 bắt AI chuẩn hóa rút gọn tên OS, Browser và Device Class.
+   * **Tác vụ 42 (`INVALID`):** AI vẫn duy trì tổ hợp Android + Chrome trong các bảng ma trận kiểm thử tương thích của Section 4.2. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 43 bắt AI loại bỏ tổ hợp Android + Chrome khỏi 5 bảng ma trận và đánh lại STT 1–7.
+   * **Tác vụ 43 (`INVALID`):** AI để trình duyệt Samsung Internet cho thiết bị Android tablet trong 5 bảng ma trận tương thích Section 4.2. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 44 bắt AI đổi Samsung Internet thành Chrome cho tổ hợp Android tablet.
+   * **Tác vụ 45 (`INVALID`):** AI để đường dẫn URL (/complaints/new, /complaints...) trong quy trình kịch bản Section 3.1 thay vì ghi rõ tên màn hình mô tả tiếng Việt. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 46 bắt AI thay thế các đường dẫn URL bằng tên màn hình mô tả tiếng Việt chi tiết.
 
 2. **Bài học kinh nghiệm & Vai trò Giám sát của Sinh viên (Human-in-the-loop Supervision):**
    - Báo cáo kiểm định thể hiện rõ nét vai trò phản biện, giám sát chặt chẽ của sinh viên đối với đầu ra của AI. Các phản hồi kịp thời của sinh viên giúp điều chỉnh AI từ các phán đoán chủ quan/sai sót ban đầu trở về kết quả kiểm thử chính xác và khách quan 100% theo đúng thực tế SUT live.

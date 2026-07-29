@@ -233,3 +233,41 @@ cập nhật tên màn hình trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03
 ```text
 mấy url có số thì để là [id]
 ```
+
+### [29-07-2026 21:31] | Gemini
+```text
+đọc lại đề @[2026.HW03.GUI Usability EMS_En.pdf] ,xem yêu cầu của task 2 và 3 rồi tạo outline trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
+```
+
+### [29-07-2026 21:40] | Gemini
+```text
+bảng ma trận 4.2 chia ra mỗi màn một bảng
+```
+
+### [29-07-2026 21:42] | Gemini
+```text
+ghi tên hệ điều hành, browser, device ngắn gọn giống như này thôi  3 operatng systems — e.g. Windows, macOS, and Android or iOS.
+ 5 browsers — e.g. Chrome, Firefox, Safari, Edge, and Opera (or Samsung Internet on
+mobile).
+ 3 device classes — desktop, tablet, and phone.
+```
+
+### [29-07-2026 21:44] | Gemini
+```text
+bỏ trường hợp android + chrome
+```
+
+### [29-07-2026 21:45] | Gemini
+```text
+đổi samsung internet thành chrome
+```
+
+### [29-07-2026 21:51] | Gemini
+```text
+phần Task 2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]  chỉ cần giữ luồng user thôi
+```
+
+### [29-07-2026 21:54] | Gemini
+```text
+đổi đường dẫn thành tên màn hình (section 3.1 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] )
+```

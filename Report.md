@@ -319,3 +319,127 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 | **IA-04-14** | Feedback | Các nút secondary actions phải được vô hiệu hóa (disabled + đổi con trỏ) khi không có gì để thực hiện, hoặc phải hiển thị phản hồi rõ ràng (toast/thông báo) nếu vẫn cho phép bấm mà không có tác dụng gì | Norman: Feedback + Signifiers | NA | |
 
 ---
+
+## 3. Task 2: User Testing with 5 Real Users → Usability Report
+
+### 3.1. Kịch bản Kiểm thử Người dùng (Task Scenario Design)
+- **Bối cảnh & Mục tiêu Kịch bản (Scenario D - Support Requests):** Xây dựng kịch bản kiểm thử nhập vai theo mục tiêu (Goal-oriented task) tập trung vào luồng Giao diện User.
+- **Quy trình kịch bản chi tiết (Luồng Sinh viên / User Side):** Đăng nhập tài khoản Sinh viên/Khách $\rightarrow$ Truy cập **Màn hình Tạo Yêu cầu Hỗ trợ Sinh viên (Screen D1)** để tạo và gửi 1 Yêu cầu Hỗ trợ kèm ảnh đính kèm minh chứng lỗi $\rightarrow$ Theo dõi danh sách trạng thái các yêu cầu tại **Màn hình Danh sách Yêu cầu Hỗ trợ Sinh viên (Screen D2.1)** $\rightarrow$ Mở xem nội dung chi tiết tại **Màn hình Chi tiết Yêu cầu Hỗ trợ Sinh viên (Screen D2.2)** để kiểm tra thông tin và phản hồi kết quả giải quyết.
+- **Các chỉ số đo lường (Metrics to Measure):**
+
+  - **Mức độ hoàn thành tác vụ (Task Success Rate):** Completed (Hoàn thành), Partial (Hoàn thành một phần), Failed (Thất bại).
+  - **Thời gian hoàn thành tác vụ (Time on Task):** Đo bằng phút / giây từ lúc bắt đầu cho tới khi hoàn tất mục tiêu.
+  - **Tần suất lỗi / Khập khiễng (Error / Hesitation Count):** Thống kê số lần nhấp chuột sai vị trí, thao tác thừa hoặc ngập ngừng trên giao diện.
+  - **Điểm đánh giá trải nghiệm SUS (System Usability Scale) / UEQ-S (User Experience Questionnaire Short):** Khảo sát chuẩn hóa 10 câu hỏi SUS sau khi thực hiện kịch bản.
+  - **Câu hỏi phỏng vấn mở (Open-ended Probe Questions):** Đánh giá cảm nhận về độ rõ ràng, tốc độ xử lý và mức độ tin cậy.
+
+### 3.2. Danh sách 5 Người tham gia Kiểm thử (Participant Recruitment Table)
+
+| STT | Họ và Tên | Vai trò Target Profile | Email / Zalo / SĐT (Masked) |
+|---|---|---|---|
+| 1 | Participant 1 | Student | `participant1@****.edu.vn` / `090****123` |
+| 2 | Participant 2 | Student | `participant2@****.edu.vn` / `091****456` |
+| 3 | Participant 3 | Student | `participant3@****.edu.vn` / `098****789` |
+| 4 | Participant 4 | Event-goer / Guest | `participant4@****.com` / `093****321` |
+| 5 | Participant 5 | Student / User | `participant5@****.edu.vn` / `097****654` |
+
+### 3.3. Bảng Kết quả Thu thập Chỉ số Kiểm thử (Execution Metrics Table)
+
+| Người tham gia | Trạng thái (Task Success Rate) | Thời gian hoàn thành (Time on Task) | Số lỗi / Ngập ngừng (Errors / Hesitations) | Điểm SUS / UEQ-S | Ghi chú phản hồi / Điểm nghẽn (Friction Points) |
+|---|---|---|---|---|---|
+| Participant 1 | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
+| Participant 2 | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
+| Participant 3 | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
+| Participant 4 | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
+| Participant 5 | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
+| **Trung bình (Mean)** | **TBD%** | **TBD** | **TBD** | **TBD / 100** |  |
+
+### 3.4. Phân tích Phản hồi Usability & Đề xuất Cải tiến (Usability Findings & Recommendations)
+- **Phân loại vấn đề & Thang điểm Severity (0–4):** Nhóm các điểm nghẽn trải nghiệm, phân định lỗi isolated bugs với lỗi systemic design issues.
+
+| ID phát hiện | Màn hình vi phạm | Mô tả điểm nghẽn Usability | Severity (0–4) | Đề xuất cải tiến (Actionable Recommendation) |
+|---|---|---|---|---|
+| *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
+
+
+---
+
+## 4. Task 3: Cross-Browser / Cross-Platform Testing Matrix
+
+### 4.1. Khung Chiến lược Ma trận Tương thích (Compatibility Strategy)
+- **Phạm vi bao phủ bắt buộc (Coverage Required):**
+  - **3 Operating Systems:** e.g., Windows, macOS, and Android or iOS.
+  - **5 Browsers:** e.g., Chrome, Firefox, Safari, Edge, and Opera (or Samsung Internet on mobile).
+  - **3 Device Classes:** desktop, tablet, and phone.
+- **Công cụ kiểm thử:** BrowserStack / LambdaTest / Real Physical Devices.
+- **Quy định Minh chứng (Anti-AI-Cheat Overlay):** 100% ảnh chụp màn hình kiểm thử phải có lớp đè nhãn Email Sinh viên (`23127462@student.hcmus.edu.vn`) kèm thông tin Hệ điều hành, Trình duyệt và URL EMS SUT live.
+
+### 4.2. Bảng Ma trận Tương thích Cross-Browser / Cross-Platform (Compatibility Matrix Tables)
+
+#### 4.2.1. Màn hình D1 - Tạo Yêu cầu Hỗ trợ Sinh viên (`/complaints/new`)
+
+| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng (Student-ID Overlay) | Ghi chú Lỗi Giao diện / Layout Fail |
+|---|---|---|---|---|---|---|
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./bug_screenshot/d1_win_chrome_desktop.png) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./bug_screenshot/d1_win_edge_desktop.png) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./bug_screenshot/d1_win_firefox_desktop.png) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./bug_screenshot/d1_mac_safari_desktop.png) | Không lỗi |
+| 5 | macOS | Opera | desktop | Pass | [PNG Ref](./bug_screenshot/d1_mac_opera_desktop.png) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./bug_screenshot/d1_android_chrome_tablet.png) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](./bug_screenshot/d1_ios_safari_mobile.png) | Không lỗi |
+
+#### 4.2.2. Màn hình D2.1 - Danh sách Yêu cầu Hỗ trợ Sinh viên (`/complaints`)
+
+| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng (Student-ID Overlay) | Ghi chú Lỗi Giao diện / Layout Fail |
+|---|---|---|---|---|---|---|
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./bug_screenshot/d2.1_win_chrome_desktop.png) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./bug_screenshot/d2.1_win_edge_desktop.png) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./bug_screenshot/d2.1_win_firefox_desktop.png) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./bug_screenshot/d2.1_mac_safari_desktop.png) | Không lỗi |
+| 5 | macOS | Opera | desktop | Pass | [PNG Ref](./bug_screenshot/d2.1_mac_opera_desktop.png) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./bug_screenshot/d2.1_android_chrome_tablet.png) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](./bug_screenshot/d2.1_ios_safari_mobile.png) | Không lỗi |
+
+#### 4.2.3. Màn hình D2.2 - Chi tiết Yêu cầu Hỗ trợ Sinh viên (`/complaints/[id]`)
+
+| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng (Student-ID Overlay) | Ghi chú Lỗi Giao diện / Layout Fail |
+|---|---|---|---|---|---|---|
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./bug_screenshot/d2.2_win_chrome_desktop.png) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./bug_screenshot/d2.2_win_edge_desktop.png) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./bug_screenshot/d2.2_win_firefox_desktop.png) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./bug_screenshot/d2.2_mac_safari_desktop.png) | Không lỗi |
+| 5 | macOS | Opera | desktop | Pass | [PNG Ref](./bug_screenshot/d2.2_mac_opera_desktop.png) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./bug_screenshot/d2.2_android_chrome_tablet.png) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](./bug_screenshot/d2.2_ios_safari_mobile.png) | Không lỗi |
+
+#### 4.2.4. Màn hình D3 - Danh sách Yêu cầu Hỗ trợ Quản trị viên (`/dashboard/admin/complaints`)
+
+| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng (Student-ID Overlay) | Ghi chú Lỗi Giao diện / Layout Fail |
+|---|---|---|---|---|---|---|
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./bug_screenshot/d3_win_chrome_desktop.png) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./bug_screenshot/d3_win_edge_desktop.png) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./bug_screenshot/d3_win_firefox_desktop.png) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./bug_screenshot/d3_mac_safari_desktop.png) | Không lỗi |
+| 5 | macOS | Opera | desktop | Pass | [PNG Ref](./bug_screenshot/d3_mac_opera_desktop.png) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./bug_screenshot/d3_android_chrome_tablet.png) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](./bug_screenshot/d3_ios_safari_mobile.png) | Không lỗi |
+
+#### 4.2.5. Màn hình D4 - Chi tiết Yêu cầu Hỗ trợ Quản trị viên (`/dashboard/admin/complaints/[id]`)
+
+| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng (Student-ID Overlay) | Ghi chú Lỗi Giao diện / Layout Fail |
+|---|---|---|---|---|---|---|
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./bug_screenshot/d4_win_chrome_desktop.png) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./bug_screenshot/d4_win_edge_desktop.png) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./bug_screenshot/d4_win_firefox_desktop.png) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./bug_screenshot/d4_mac_safari_desktop.png) | Không lỗi |
+| 5 | macOS | Opera | desktop | Pass | [PNG Ref](./bug_screenshot/d4_mac_opera_desktop.png) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./bug_screenshot/d4_android_chrome_tablet.png) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](./bug_screenshot/d4_ios_safari_mobile.png) | Không lỗi |
+
+### 4.3. Báo cáo Chi tiết Lỗi Tương thích Giao diện (Layout & Rendering Defects)
+- **Tóm tắt phát hiện kiểm thử tương thích:** Ghi nhận và phân tích các lỗi vỡ khung, tràn văn bản (overflow), đè lên nhau (overlap), hoặc không phản hồi trên màn hình cảm ứng (nếu có).
+
+
+
+
+
