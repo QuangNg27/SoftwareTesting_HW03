@@ -435,12 +435,3 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 | 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_mac_opera_desktop.png) | Không lỗi |
 | 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d4_android_chrome_tablet.png) | Không lỗi |
 | 7 | iOS | Safari | phone | Fail | [PNG Ref](./cross_browser_sceenshot/d4_ios_safari_mobile.png) | Thanh sidebar chèn làm lỗi layout của trang, rút gọn lại thì mới nhìn bình thường |
-
-### 4.3. Báo cáo Chi tiết Lỗi Tương thích Giao diện (Layout & Rendering Defects)
-- **Tóm tắt phát hiện kiểm thử tương thích:** Ghi nhận và phân tích các lỗi vỡ khung, tràn văn bản (overflow), đè lên nhau (overlap), hoặc không phản hồi trên màn hình cảm ứng (nếu có).
-
-
-
-
-
-
