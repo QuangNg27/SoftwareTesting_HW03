@@ -271,3 +271,8 @@ phần Task 2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]  chỉ c�
 ```text
 đổi đường dẫn thành tên màn hình (section 3.1 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] )
 ```
+
+### [30-07-2026 21:19] | Gemini
+```text
+đổi thư mục các ảnh minh chứng ở section 4.2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] sang @[cross_browser_sceenshot]
+```

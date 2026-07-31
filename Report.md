@@ -378,66 +378,67 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 
 #### 4.2.1. Màn hình D1 - Tạo Yêu cầu Hỗ trợ Sinh viên (`/complaints/new`)
 
-| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng (Student-ID Overlay) | Ghi chú Lỗi Giao diện / Layout Fail |
+| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
-| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./bug_screenshot/d1_win_chrome_desktop.png) | Không lỗi |
-| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./bug_screenshot/d1_win_edge_desktop.png) | Không lỗi |
-| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./bug_screenshot/d1_win_firefox_desktop.png) | Không lỗi |
-| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./bug_screenshot/d1_mac_safari_desktop.png) | Không lỗi |
-| 5 | macOS | Opera | desktop | Pass | [PNG Ref](./bug_screenshot/d1_mac_opera_desktop.png) | Không lỗi |
-| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./bug_screenshot/d1_android_chrome_tablet.png) | Không lỗi |
-| 7 | iOS | Safari | phone | Pass | [PNG Ref](./bug_screenshot/d1_ios_safari_mobile.png) | Không lỗi |
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d1_win_chrome_desktop.png) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d1_win_edge_desktop.png) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d1_win_firefox_desktop.png) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d1_mac_safari_desktop.png) | Không lỗi |
+| 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d1_mac_opera_desktop.png) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d1_android_chrome_tablet.png) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](./cross_browser_sceenshot/d1_ios_safari_mobile.png) | Không lỗi |
 
 #### 4.2.2. Màn hình D2.1 - Danh sách Yêu cầu Hỗ trợ Sinh viên (`/complaints`)
 
-| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng (Student-ID Overlay) | Ghi chú Lỗi Giao diện / Layout Fail |
+| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
-| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./bug_screenshot/d2.1_win_chrome_desktop.png) | Không lỗi |
-| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./bug_screenshot/d2.1_win_edge_desktop.png) | Không lỗi |
-| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./bug_screenshot/d2.1_win_firefox_desktop.png) | Không lỗi |
-| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./bug_screenshot/d2.1_mac_safari_desktop.png) | Không lỗi |
-| 5 | macOS | Opera | desktop | Pass | [PNG Ref](./bug_screenshot/d2.1_mac_opera_desktop.png) | Không lỗi |
-| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./bug_screenshot/d2.1_android_chrome_tablet.png) | Không lỗi |
-| 7 | iOS | Safari | phone | Pass | [PNG Ref](./bug_screenshot/d2.1_ios_safari_mobile.png) | Không lỗi |
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_win_chrome_desktop.png) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_win_edge_desktop.png) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_win_firefox_desktop.png) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_mac_safari_desktop.png) | Không lỗi |
+| 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_mac_opera_desktop.png) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_android_chrome_tablet.png) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_ios_safari_mobile.png) | Không lỗi |
 
 #### 4.2.3. Màn hình D2.2 - Chi tiết Yêu cầu Hỗ trợ Sinh viên (`/complaints/[id]`)
 
-| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng (Student-ID Overlay) | Ghi chú Lỗi Giao diện / Layout Fail |
+| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
-| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./bug_screenshot/d2.2_win_chrome_desktop.png) | Không lỗi |
-| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./bug_screenshot/d2.2_win_edge_desktop.png) | Không lỗi |
-| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./bug_screenshot/d2.2_win_firefox_desktop.png) | Không lỗi |
-| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./bug_screenshot/d2.2_mac_safari_desktop.png) | Không lỗi |
-| 5 | macOS | Opera | desktop | Pass | [PNG Ref](./bug_screenshot/d2.2_mac_opera_desktop.png) | Không lỗi |
-| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./bug_screenshot/d2.2_android_chrome_tablet.png) | Không lỗi |
-| 7 | iOS | Safari | phone | Pass | [PNG Ref](./bug_screenshot/d2.2_ios_safari_mobile.png) | Không lỗi |
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_win_chrome_desktop.png) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_win_edge_desktop.png) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_win_firefox_desktop.png) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_mac_safari_desktop.png) | Không lỗi |
+| 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_mac_opera_desktop.png) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_android_chrome_tablet.png) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_ios_safari_mobile.png) | Không lỗi |
 
 #### 4.2.4. Màn hình D3 - Danh sách Yêu cầu Hỗ trợ Quản trị viên (`/dashboard/admin/complaints`)
 
-| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng (Student-ID Overlay) | Ghi chú Lỗi Giao diện / Layout Fail |
+| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
-| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./bug_screenshot/d3_win_chrome_desktop.png) | Không lỗi |
-| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./bug_screenshot/d3_win_edge_desktop.png) | Không lỗi |
-| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./bug_screenshot/d3_win_firefox_desktop.png) | Không lỗi |
-| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./bug_screenshot/d3_mac_safari_desktop.png) | Không lỗi |
-| 5 | macOS | Opera | desktop | Pass | [PNG Ref](./bug_screenshot/d3_mac_opera_desktop.png) | Không lỗi |
-| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./bug_screenshot/d3_android_chrome_tablet.png) | Không lỗi |
-| 7 | iOS | Safari | phone | Pass | [PNG Ref](./bug_screenshot/d3_ios_safari_mobile.png) | Không lỗi |
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d3_win_chrome_desktop.png) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d3_win_edge_desktop.png) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d3_win_firefox_desktop.png) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d3_mac_safari_desktop.png) | Không lỗi |
+| 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d3_mac_opera_desktop.png) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d3_android_chrome_tablet.png) | Không lỗi |
+| 7 | iOS | Safari | phone | Fail | [PNG Ref](./cross_browser_sceenshot/d3_ios_safari_mobile.png) | Thanh sidebar chèn làm lỗi layout của trang, rút gọn lại thì mới nhìn bình thường  |
 
 #### 4.2.5. Màn hình D4 - Chi tiết Yêu cầu Hỗ trợ Quản trị viên (`/dashboard/admin/complaints/[id]`)
 
-| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng (Student-ID Overlay) | Ghi chú Lỗi Giao diện / Layout Fail |
+| STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
-| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./bug_screenshot/d4_win_chrome_desktop.png) | Không lỗi |
-| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./bug_screenshot/d4_win_edge_desktop.png) | Không lỗi |
-| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./bug_screenshot/d4_win_firefox_desktop.png) | Không lỗi |
-| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./bug_screenshot/d4_mac_safari_desktop.png) | Không lỗi |
-| 5 | macOS | Opera | desktop | Pass | [PNG Ref](./bug_screenshot/d4_mac_opera_desktop.png) | Không lỗi |
-| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./bug_screenshot/d4_android_chrome_tablet.png) | Không lỗi |
-| 7 | iOS | Safari | phone | Pass | [PNG Ref](./bug_screenshot/d4_ios_safari_mobile.png) | Không lỗi |
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_win_chrome_desktop.png) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_win_edge_desktop.png) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_win_firefox_desktop.png) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_mac_safari_desktop.png) | Không lỗi |
+| 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_mac_opera_desktop.png) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d4_android_chrome_tablet.png) | Không lỗi |
+| 7 | iOS | Safari | phone | Fail | [PNG Ref](./cross_browser_sceenshot/d4_ios_safari_mobile.png) | Thanh sidebar chèn làm lỗi layout của trang, rút gọn lại thì mới nhìn bình thường |
 
 ### 4.3. Báo cáo Chi tiết Lỗi Tương thích Giao diện (Layout & Rendering Defects)
 - **Tóm tắt phát hiện kiểm thử tương thích:** Ghi nhận và phân tích các lỗi vỡ khung, tràn văn bản (overflow), đè lên nhau (overlap), hoặc không phản hồi trên màn hình cảm ứng (nếu có).
+
 
 
 
