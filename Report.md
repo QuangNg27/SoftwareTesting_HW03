@@ -406,12 +406,11 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
   - **3 Operating Systems:** e.g., Windows, macOS, and Android or iOS.
   - **5 Browsers:** e.g., Chrome, Firefox, Safari, Edge, and Opera (or Samsung Internet on mobile).
   - **3 Device Classes:** desktop, tablet, and phone.
-- **Công cụ kiểm thử:** BrowserStack / LambdaTest / Real Physical Devices.
-- **Quy định Minh chứng (Anti-AI-Cheat Overlay):** 100% ảnh chụp màn hình kiểm thử phải có lớp đè nhãn Email Sinh viên (`23127462@student.hcmus.edu.vn`) kèm thông tin Hệ điều hành, Trình duyệt và URL EMS SUT live.
+- **Công cụ kiểm thử:** BrowserStack / Real Physical Devices.
 
 ### 4.2. Bảng Ma trận Tương thích Cross-Browser / Cross-Platform (Compatibility Matrix Tables)
 
-#### 4.2.1. Màn hình D1 - Tạo Yêu cầu Hỗ trợ Sinh viên (`/complaints/new`)
+#### 4.2.1. Màn hình D1 - Tạo Yêu cầu Hỗ trợ (`/complaints/new`)
 
 | STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
@@ -423,7 +422,7 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 | 6 | Android | Chrome | tablet | Pass | [PNG Ref](https://drive.google.com/file/d/1Wu9w-Bgrahi7CC3Eoay8ZWEMJiOcmQsZ/view?usp=drive_link) | Không lỗi |
 | 7 | iOS | Safari | phone | Pass | [PNG Ref](https://drive.google.com/file/d/1OaW3HHpYNzohAimWqd10RtFWFbPEMkDP/view?usp=drive_link) | Không lỗi |
 
-#### 4.2.2. Màn hình D2.1 - Danh sách Yêu cầu Hỗ trợ Sinh viên (`/complaints`)
+#### 4.2.2. Màn hình D2.1 - Danh sách Yêu cầu Hỗ trợ (`/complaints`)
 
 | STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
@@ -435,7 +434,7 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 | 6 | Android | Chrome | tablet | Pass | [PNG Ref](https://drive.google.com/file/d/1fO5BENZh_T-DV5AHXDa7etRHldlGLmyu/view?usp=drive_link) | Không lỗi |
 | 7 | iOS | Safari | phone | Pass | [PNG Ref](https://drive.google.com/file/d/1rhVo9ZZk5rF1eB82-zq0kiHpyOSdZnid/view?usp=drive_link) | Không lỗi |
 
-#### 4.2.3. Màn hình D2.2 - Chi tiết Yêu cầu Hỗ trợ Sinh viên (`/complaints/[id]`)
+#### 4.2.3. Màn hình D2.2 - Chi tiết Yêu cầu Hỗ trợ (`/complaints/[id]`)
 
 | STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
