@@ -324,7 +324,7 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 
 ### 3.1. Kịch bản Kiểm thử Người dùng (Task Scenario Design)
 - **Bối cảnh & Mục tiêu Kịch bản (Scenario D - Support Requests):** Xây dựng kịch bản kiểm thử nhập vai theo mục tiêu (Goal-oriented task) tập trung vào luồng Giao diện User.
-- **Quy trình kịch bản chi tiết:** Tạo một yêu cầu hỗ trợ báo cáo là không đăng ký được workshop rồi theo dõi nó đến khi nó được xử lý.
+- **Quy trình kịch bản chi tiết:** Tạo một yêu cầu hỗ trợ báo cáo là không đăng ký được sự kiện rồi theo dõi nó đến khi nó được xử lý.
 - **Các chỉ số đo lường (Metrics to Measure):**
 
   - **Mức độ hoàn thành tác vụ (Task Success Rate):** Completed (Hoàn thành), Partial (Hoàn thành một phần), Failed (Thất bại).
