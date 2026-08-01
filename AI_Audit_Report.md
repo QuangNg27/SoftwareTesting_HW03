@@ -1531,18 +1531,43 @@ Thêm probe question cho task 2 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_H
 
 ---
 
+#### **Tác vụ 52: Trích xuất & Đưa 2 Lỗi Usability Layout Sidebar (USA-21 & USA-22) trong Section 4.2.4 và 4.2.5 ra Bảng Nhật ký Lỗi bug_and_usability_findings_log.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 01-08-2026
+  - **Prompt gốc:**
+```text
+đưa 2 cái lỗi UI trong phần 4.2.4 và 4.2.5 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] ra bug log
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã trích xuất 2 lỗi vỡ layout giao diện do thanh sidebar chèn đè trên thiết bị di động iOS Safari (dòng STT 7 trong Bảng 4.2.4 và Bảng 4.2.5), khởi tạo 2 mục lỗi Usability mới (USA-21 cho Màn hình D3 Admin List và USA-22 cho Màn hình D4 Admin Detail) vào tệp bug_and_usability_findings_log.md đầy đủ 9 cột tiêu chuẩn (§7), đồng thời cập nhật mã Log ID hai chiều vào cột Ghi chú trong Report.md.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên rà soát tệp bug_and_usability_findings_log.md và Report.md, xác nhận 2 lỗi UI/Layout trên di động đã được ghi log hoàn chỉnh và đồng bộ 100%.
+
+---
+
 ### Overall AI Accuracy Ratio
 
 | Trạng thái | Số lượng | Tỷ lệ phần trăm |
 |---|---|---|
-| **VALID** | **33** | **64.7%** |
-| **INVALID** | **18** | **35.3%** |
+| **VALID** | **34** | **65.4%** |
+| **INVALID** | **18** | **34.6%** |
 | **INCOMPLETE** | **0** | **0.0%** |
-| **Tổng số tác vụ kiểm định** | **51** | **100.0%** |
+| **Tổng số tác vụ kiểm định** | **52** | **100.0%** |
 
 #### Đánh giá Tổng quan & Phân tích Nguyên nhân Lỗi AI (AI Error Root-Cause Analysis):
 
-1. **Phân tích các tác vụ Đánh giá INVALID (18/51 tác vụ = 35.3%):**
+1. **Phân tích các tác vụ Đánh giá INVALID (18/52 tác vụ = 34.6%):**
    * **Tác vụ 4 (`INVALID`):** AI phán đoán chưa tối ưu về mặt kiến trúc màn hình khi gộp chung màn hình Danh sách (List) và Chi tiết (Detail) phía User Side thành 1 màn hình D2 duy nhất trong `Report.md`. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 10 để ép AI phân tách thành D2 (List) và D3 (Detail), nâng phạm vi kiểm thử lên 5 màn hình.
    * **Tác vụ 11 (`INVALID`):** AI mắc 2 sai sót: (1) Phán đoán nhầm tiêu chí `IA-02-01` là `Fail` (báo sai lỗi `USA-01` thiếu dấu `*` trong khi thực tế label có dấu `*` màu đỏ rõ ràng); (2) Quên ghi file ảnh PNG ra ổ đĩa mà mới dừng ở log response. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 12 (bắt ghi file ảnh PNG qua Python) và Tác vụ 13 (bắt sửa `IA-02-01` thành `Pass` & xóa `USA-01`).
    * **Tác vụ 22 (`INVALID`):** AI dùng sai định dạng URL `file:///d:/...` trong bảng Markdown khiến trình xem Markdown Preview không kích hoạt link mở ảnh được. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 23 để chuyển đổi về định dạng đường dẫn tương đối chuẩn `./bug_screenshot/filename.png`.

@@ -296,3 +296,8 @@ Tạo google form
 ```text
 Thêm probe question cho task 2 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
 ```
+
+### [01-08-2026 11:15] | Gemini
+```text
+đưa 2 cái lỗi UI trong phần 4.2.4 và 4.2.5 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] ra bug log
+```

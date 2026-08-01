@@ -362,7 +362,7 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 |---|---|---|
 | **PQ1** | Ấn tượng ban đầu & Nhận diện Giao diện | *"Khi lần đầu mở Màn hình Tạo Yêu cầu hỗ trợ, bạn thấy các nhãn và ô nhập liệu có rõ ràng không? Có thông tin nào khiến bạn bối rối hoặc ngập ngừng không?"* |
 | **PQ2** | Thao tác Đính kèm Ảnh minh chứng | *"Thao tác chọn tệp và đính kèm hình ảnh minh chứng lỗi diễn ra như thế nào? Bạn có gặp khó khăn hoặc thắc mắc gì về định dạng/dung lượng ảnh được phép không?"* |
-| **PQ3** | Trực quan hóa Trạng thái & Phản hồi | *"Khi theo dõi Danh sách yêu cầu và xem Chi tiết yêu cầu, bạn có dễ dàng nhận biết trạng thái xử lý (Đã duyệt, Từ chối, Đang xử lý) không? Thông báo phản hồi có đủ rõ ràng không?"* |
+| **PQ3** | Trực quan hóa Trạng thái & Phản hồi | *"Khi theo dõi Danh sách yêu cầu và xem Chi tiết yêu cầu, bạn có dễ dàng nhận biết trạng thái xử lý (Đã xử lý, Từ chối, Đang xử lý) không? Thông báo phản hồi có đủ rõ ràng không?"* |
 | **PQ4** | Khả năng Tự khắc phục Lỗi & Cảnh báo | *"Nếu bạn nhập thiếu thông tin hoặc gặp sự cố ngắt kết nối mạng, hệ thống có hiển thị cảnh báo/hướng dẫn rõ ràng giúp bạn tự khắc phục không?"* |
 | **PQ5** | Đề xuất Cải tiến Trải nghiệm từ Người dùng | *"Nếu được thay đổi hoặc bổ sung 1 điểm duy nhất ở quy trình này để giúp việc gửi và theo dõi yêu cầu hỗ trợ thuận tiện hơn, bạn sẽ đề xuất điều gì?"* |
 
@@ -457,7 +457,7 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 | 4 | macOS | Safari | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1J1WDNrZm_2uBq0K-L3WvecTZTKIHkeiP/view?usp=drive_link) | Không lỗi |
 | 5 | Windows | Opera | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1N0y29y6ktQlguFzZTNQ_qqH9KLdkfPfx/view?usp=drive_link) | Không lỗi |
 | 6 | Android | Chrome | tablet | Pass | [PNG Ref](https://drive.google.com/file/d/1Si6NSAmYoOATpPVkgB29uGMbXJ8Q27cC/view?usp=drive_link) | Không lỗi |
-| 7 | iOS | Safari | phone | Fail | [PNG Ref](https://drive.google.com/file/d/1oJGHvSSarInGs8p2pBB0v2kFMOLZoqUV/view?usp=drive_link) | Thanh sidebar chèn làm lỗi layout của trang, rút gọn lại thì mới nhìn bình thường  |
+| 7 | iOS | Safari | phone | Fail | [PNG Ref](https://drive.google.com/file/d/1oJGHvSSarInGs8p2pBB0v2kFMOLZoqUV/view?usp=drive_link) | Thanh sidebar chèn làm lỗi layout của trang, rút gọn lại thì mới nhìn bình thường |
 
 #### 4.2.5. Màn hình D4 - Chi tiết Yêu cầu Hỗ trợ Quản trị viên (`/dashboard/admin/complaints/[id]`)
 
