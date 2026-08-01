@@ -276,3 +276,23 @@ phần Task 2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]  chỉ c�
 ```text
 đổi thư mục các ảnh minh chứng ở section 4.2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] sang @[cross_browser_sceenshot]
 ```
+
+### [01-08-2026 09:45] | Gemini
+```text
+chỉnh tên file ảnh trong @[cross_browser_sceenshot] cái nào mac_opera thì đổi thành win_opera
+```
+
+### [01-08-2026 10:01] | Gemini
+```text
+xây dựng các câu hỏi SUS ở phần task 2
+```
+
+### [01-08-2026 10:16] | Gemini
+```text
+Tạo google form
+```
+
+### [01-08-2026 10:40] | Gemini
+```text
+Thêm probe question cho task 2 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
+```

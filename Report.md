@@ -324,7 +324,7 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 
 ### 3.1. Kịch bản Kiểm thử Người dùng (Task Scenario Design)
 - **Bối cảnh & Mục tiêu Kịch bản (Scenario D - Support Requests):** Xây dựng kịch bản kiểm thử nhập vai theo mục tiêu (Goal-oriented task) tập trung vào luồng Giao diện User.
-- **Quy trình kịch bản chi tiết (Luồng Sinh viên / User Side):** Đăng nhập tài khoản Sinh viên/Khách $\rightarrow$ Truy cập **Màn hình Tạo Yêu cầu Hỗ trợ Sinh viên (Screen D1)** để tạo và gửi 1 Yêu cầu Hỗ trợ kèm ảnh đính kèm minh chứng lỗi $\rightarrow$ Theo dõi danh sách trạng thái các yêu cầu tại **Màn hình Danh sách Yêu cầu Hỗ trợ Sinh viên (Screen D2.1)** $\rightarrow$ Mở xem nội dung chi tiết tại **Màn hình Chi tiết Yêu cầu Hỗ trợ Sinh viên (Screen D2.2)** để kiểm tra thông tin và phản hồi kết quả giải quyết.
+- **Quy trình kịch bản chi tiết (Luồng Sinh viên / User Side):** Đăng nhập tài khoản Sinh viên/Khách $\rightarrow$ Truy cập **Màn hình Tạo Yêu cầu Hỗ trợ Sinh viên (Screen D1)** để tạo 1 Yêu cầu Hỗ trợ (có thể kèm ảnh đính kèm minh chứng lỗi) $\rightarrow$ Theo dõi danh sách trạng thái các yêu cầu tại **Màn hình Danh sách Yêu cầu Hỗ trợ Sinh viên (Screen D2.1)** $\rightarrow$ Mở xem nội dung chi tiết tại **Màn hình Chi tiết Yêu cầu Hỗ trợ Sinh viên (Screen D2.2)** để kiểm tra thông tin và kết quả phản hồi.
 - **Các chỉ số đo lường (Metrics to Measure):**
 
   - **Mức độ hoàn thành tác vụ (Task Success Rate):** Completed (Hoàn thành), Partial (Hoàn thành một phần), Failed (Thất bại).
@@ -333,7 +333,42 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
   - **Điểm đánh giá trải nghiệm SUS (System Usability Scale) / UEQ-S (User Experience Questionnaire Short):** Khảo sát chuẩn hóa 10 câu hỏi SUS sau khi thực hiện kịch bản.
   - **Câu hỏi phỏng vấn mở (Open-ended Probe Questions):** Đánh giá cảm nhận về độ rõ ràng, tốc độ xử lý và mức độ tin cậy.
 
+#### 3.1.1. Bộ Câu Hỏi Khảo Sát Trải Nghiệm Chuẩn Hóa SUS (System Usability Scale - 10 Items)
+*Được khảo sát ngay sau khi người tham gia hoàn tất kịch bản kiểm thử trên thang đo Likert 5 điểm (1: Hoàn toàn không đồng ý $\rightarrow$ 5: Hoàn toàn đồng ý).*
+
+| STT | Loại phát biểu | Nội dung Câu hỏi Khảo sát SUS | Thang điểm |
+|---|---|---|---|
+| **Q1** | Tích cực | Tôi nghĩ rằng tôi sẽ muốn sử dụng hệ thống này thường xuyên khi cần gửi yêu cầu hỗ trợ. | 1 – 2 – 3 – 4 – 5 |
+| **Q2** | Tiêu cực | Tôi thấy giao diện và quy trình gửi hỗ trợ của hệ thống này phức tạp một cách không cần thiết. | 1 – 2 – 3 – 4 – 5 |
+| **Q3** | Tích cực | Tôi nghĩ hệ thống này dễ sử dụng và thân thiện với người dùng. | 1 – 2 – 3 – 4 – 5 |
+| **Q4** | Tiêu cực | Tôi nghĩ rằng tôi sẽ cần sự hỗ trợ của kỹ thuật viên/người hướng dẫn để có thể sử dụng hệ thống này. | 1 – 2 – 3 – 4 – 5 |
+| **Q5** | Tích cực | Tôi thấy các chức năng trong hệ thống này (tạo yêu cầu hỗ trợ, đính kèm ảnh, theo dõi trạng thái) được tích hợp rất tốt. | 1 – 2 – 3 – 4 – 5 |
+| **Q6** | Tiêu cực | Tôi nghĩ rằng có quá nhiều sự không thống nhất về giao diện/icon/thông báo trong hệ thống này. | 1 – 2 – 3 – 4 – 5 |
+| **Q7** | Tích cực | Tôi tưởng tượng rằng hầu hết mọi người sẽ học cách sử dụng hệ thống này rất nhanh chóng. | 1 – 2 – 3 – 4 – 5 |
+| **Q8** | Tiêu cực | Tôi thấy giao diện hệ thống này rất cồng kềnh và rườm rà khi thao tác. | 1 – 2 – 3 – 4 – 5 |
+| **Q9** | Tích cực | Tôi cảm thấy rất tự tin và chủ động khi thao tác trên hệ thống này. | 1 – 2 – 3 – 4 – 5 |
+| **Q10** | Tiêu cực | Tôi cần phải học/đọc hiểu rất nhiều điều trước khi có thể bắt đầu sử dụng thành thạo hệ thống này. | 1 – 2 – 3 – 4 – 5 |
+
+- **Quy tắc Tính Điểm SUS (SUS Score Calculation Formula):**
+  - Đối với các câu hỏi **số lẻ (Q1, Q3, Q5, Q7, Q9 - Tích cực)**: $\text{Điểm thành phần} = \text{Điểm đánh giá (1-5)} - 1$.
+  - Đối với các câu hỏi **số cặp (Q2, Q4, Q6, Q8, Q10 - Tiêu cực)**: $\text{Điểm thành phần} = 5 - \text{Điểm đánh giá (1-5)}$.
+  - **Điểm tổng SUS cá nhân** $= (\sum_{i=1}^{10} \text{Điểm thành phần}_i) \times 2.5$ (Quy đổi ra thang điểm từ 0 đến 100).
+  - **Đánh giá điểm SUS:** Mức chuẩn trung bình ngành là **68/100** ($>68$: Above Average / Dễ sử dụng; $<68$: Below Average / Cần cải tiến gấp).
+
+#### 3.1.2. Danh Sách Câu Hỏi Phỏng Vấn Đào Sâu Trải Nghiệm (Open-ended Probe Questions)
+*Được người kiểm thử (Facilitator) sử dụng để phỏng vấn đào sâu ngay sau khi người tham gia hoàn tất kịch bản kiểm thử nhằm ghi nhận chi tiết các điểm nghẽn trải nghiệm (Friction Points).*
+
+| Mã PQ | Mục tiêu Phỏng vấn | Nội dung Câu hỏi Phỏng vấn Đào sâu (Open-ended Probe Questions) |
+|---|---|---|
+| **PQ1** | Ấn tượng ban đầu & Nhận diện Giao diện | *"Khi lần đầu mở Màn hình Tạo Yêu cầu hỗ trợ, bạn thấy các nhãn và ô nhập liệu có rõ ràng không? Có thông tin nào khiến bạn bối rối hoặc ngập ngừng không?"* |
+| **PQ2** | Thao tác Đính kèm Ảnh minh chứng | *"Thao tác chọn tệp và đính kèm hình ảnh minh chứng lỗi diễn ra như thế nào? Bạn có gặp khó khăn hoặc thắc mắc gì về định dạng/dung lượng ảnh được phép không?"* |
+| **PQ3** | Trực quan hóa Trạng thái & Phản hồi | *"Khi theo dõi Danh sách yêu cầu và xem Chi tiết yêu cầu, bạn có dễ dàng nhận biết trạng thái xử lý (Đã duyệt, Từ chối, Đang xử lý) không? Thông báo phản hồi có đủ rõ ràng không?"* |
+| **PQ4** | Khả năng Tự khắc phục Lỗi & Cảnh báo | *"Nếu bạn nhập thiếu thông tin hoặc gặp sự cố ngắt kết nối mạng, hệ thống có hiển thị cảnh báo/hướng dẫn rõ ràng giúp bạn tự khắc phục không?"* |
+| **PQ5** | Đề xuất Cải tiến Trải nghiệm từ Người dùng | *"Nếu được thay đổi hoặc bổ sung 1 điểm duy nhất ở quy trình này để giúp việc gửi và theo dõi yêu cầu hỗ trợ thuận tiện hơn, bạn sẽ đề xuất điều gì?"* |
+
 ### 3.2. Danh sách 5 Người tham gia Kiểm thử (Participant Recruitment Table)
+
+
 
 | STT | Họ và Tên | Vai trò Target Profile | Email / Zalo / SĐT (Masked) |
 |---|---|---|---|
@@ -380,58 +415,58 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 
 | STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
-| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d1_win_chrome_desktop.png) | Không lỗi |
-| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d1_win_edge_desktop.png) | Không lỗi |
-| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d1_win_firefox_desktop.png) | Không lỗi |
-| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d1_mac_safari_desktop.png) | Không lỗi |
-| 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d1_mac_opera_desktop.png) | Không lỗi |
-| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d1_android_chrome_tablet.png) | Không lỗi |
-| 7 | iOS | Safari | phone | Pass | [PNG Ref](./cross_browser_sceenshot/d1_ios_safari_mobile.png) | Không lỗi |
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1KMeCHfO80ArbsVb7df72WwJbH4Rq14F8/view?usp=drive_link) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/14o9XuV73tnGqtU38DOFor-s2z5B3EAlR/view?usp=drive_link) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1QlmeqXf6lAkdpfltq6zAYbWHJajQcV6b/view?usp=drive_link) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1hM9SGifHIy1ejAnCvwRqgaUdxNGIKkwE/view?usp=drive_link) | Không lỗi |
+| 5 | Windows | Opera | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/155Fh3-SNKd-sFja5f_lhNVbZxfQcy-Zs/view?usp=drive_link) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](https://drive.google.com/file/d/1Wu9w-Bgrahi7CC3Eoay8ZWEMJiOcmQsZ/view?usp=drive_link) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](https://drive.google.com/file/d/1OaW3HHpYNzohAimWqd10RtFWFbPEMkDP/view?usp=drive_link) | Không lỗi |
 
 #### 4.2.2. Màn hình D2.1 - Danh sách Yêu cầu Hỗ trợ Sinh viên (`/complaints`)
 
 | STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
-| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_win_chrome_desktop.png) | Không lỗi |
-| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_win_edge_desktop.png) | Không lỗi |
-| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_win_firefox_desktop.png) | Không lỗi |
-| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_mac_safari_desktop.png) | Không lỗi |
-| 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_mac_opera_desktop.png) | Không lỗi |
-| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_android_chrome_tablet.png) | Không lỗi |
-| 7 | iOS | Safari | phone | Pass | [PNG Ref](./cross_browser_sceenshot/d2.1_ios_safari_mobile.png) | Không lỗi |
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1jjIZTmkloezcMcCW1dUr-YfgFlOB5fFF/view?usp=drive_link) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1KwbKUP64Fbo3ydu1s8If5zLLmMXpO4Cn/view?usp=drive_link) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/13x9UTdujtNWyaktP_wp1mom5W7nhAgkK/view?usp=drive_link) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1T1gd2O0NxKC8deMzuJAsY04LrON68fow/view?usp=drive_link) | Không lỗi |
+| 5 | Windows | Opera | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1Y5orviLFszNPenNU7J3fsaHB6EPpHtq1/view?usp=drive_link) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](https://drive.google.com/file/d/1fO5BENZh_T-DV5AHXDa7etRHldlGLmyu/view?usp=drive_link) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](https://drive.google.com/file/d/1rhVo9ZZk5rF1eB82-zq0kiHpyOSdZnid/view?usp=drive_link) | Không lỗi |
 
 #### 4.2.3. Màn hình D2.2 - Chi tiết Yêu cầu Hỗ trợ Sinh viên (`/complaints/[id]`)
 
 | STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
-| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_win_chrome_desktop.png) | Không lỗi |
-| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_win_edge_desktop.png) | Không lỗi |
-| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_win_firefox_desktop.png) | Không lỗi |
-| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_mac_safari_desktop.png) | Không lỗi |
-| 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_mac_opera_desktop.png) | Không lỗi |
-| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_android_chrome_tablet.png) | Không lỗi |
-| 7 | iOS | Safari | phone | Pass | [PNG Ref](./cross_browser_sceenshot/d2.2_ios_safari_mobile.png) | Không lỗi |
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1fMyoNUfxBF0bTkM8QAD_suHV6aIx4kly/view?usp=drive_link) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1LKcE3HUl8ExmCWOAv9Dx1MvdRLCy225E/view?usp=drive_link) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1yhHXlTojYoZA1z9VG6j4ftzq2FnrYN5d/view?usp=drive_link) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/168AuTdTGuPjgdJhraoKeoXduF0Hv37tP/view?usp=drive_link) | Không lỗi |
+| 5 | Windows | Opera | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1neHcWGaI_z7gJnaUZcznYoO102fJ2jpS/view?usp=drive_link) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](https://drive.google.com/file/d/1DrrDOw4UnoN7t5rtRIGtxG3OC0XQAIq4/view?usp=drive_link) | Không lỗi |
+| 7 | iOS | Safari | phone | Pass | [PNG Ref](https://drive.google.com/file/d/1V8tOY_iqupn44bhSxvikTMf9dZUp1leZ/view?usp=drive_link) | Không lỗi |
 
 #### 4.2.4. Màn hình D3 - Danh sách Yêu cầu Hỗ trợ Quản trị viên (`/dashboard/admin/complaints`)
 
 | STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
-| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d3_win_chrome_desktop.png) | Không lỗi |
-| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d3_win_edge_desktop.png) | Không lỗi |
-| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d3_win_firefox_desktop.png) | Không lỗi |
-| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d3_mac_safari_desktop.png) | Không lỗi |
-| 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d3_mac_opera_desktop.png) | Không lỗi |
-| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d3_android_chrome_tablet.png) | Không lỗi |
-| 7 | iOS | Safari | phone | Fail | [PNG Ref](./cross_browser_sceenshot/d3_ios_safari_mobile.png) | Thanh sidebar chèn làm lỗi layout của trang, rút gọn lại thì mới nhìn bình thường  |
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1rJyFLqqPVjfr7ggZEbhFg3WlysydsNbN/view?usp=drive_link) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1Y2s2N2gSQ9JIVU220Gmvx3rypY2sq6qy/view?usp=drive_link) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1_AzMG0ymROXZj3dOJTq7b-sqFHj6a4B1/view?usp=drive_link) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1J1WDNrZm_2uBq0K-L3WvecTZTKIHkeiP/view?usp=drive_link) | Không lỗi |
+| 5 | Windows | Opera | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1N0y29y6ktQlguFzZTNQ_qqH9KLdkfPfx/view?usp=drive_link) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](https://drive.google.com/file/d/1Si6NSAmYoOATpPVkgB29uGMbXJ8Q27cC/view?usp=drive_link) | Không lỗi |
+| 7 | iOS | Safari | phone | Fail | [PNG Ref](https://drive.google.com/file/d/1oJGHvSSarInGs8p2pBB0v2kFMOLZoqUV/view?usp=drive_link) | Thanh sidebar chèn làm lỗi layout của trang, rút gọn lại thì mới nhìn bình thường  |
 
 #### 4.2.5. Màn hình D4 - Chi tiết Yêu cầu Hỗ trợ Quản trị viên (`/dashboard/admin/complaints/[id]`)
 
 | STT | Hệ điều hành (OS) | Trình duyệt (Browser) | Lớp thiết bị (Device Class) | Verdict (Pass/Fail) | Ảnh minh chứng | Ghi chú Lỗi Giao diện / Layout Fail |
 |---|---|---|---|---|---|---|
-| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_win_chrome_desktop.png) | Không lỗi |
-| 2 | Windows | Edge | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_win_edge_desktop.png) | Không lỗi |
-| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_win_firefox_desktop.png) | Không lỗi |
-| 4 | macOS | Safari | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_mac_safari_desktop.png) | Không lỗi |
-| 5 | Windows | Opera | desktop | Pass | [PNG Ref](./cross_browser_sceenshot/d4_mac_opera_desktop.png) | Không lỗi |
-| 6 | Android | Chrome | tablet | Pass | [PNG Ref](./cross_browser_sceenshot/d4_android_chrome_tablet.png) | Không lỗi |
-| 7 | iOS | Safari | phone | Fail | [PNG Ref](./cross_browser_sceenshot/d4_ios_safari_mobile.png) | Thanh sidebar chèn làm lỗi layout của trang, rút gọn lại thì mới nhìn bình thường |
+| 1 | Windows | Chrome | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1pQ_UD9I1whflxhrsAARfqwJ1H7ZTCoMl/view?usp=drive_link) | Không lỗi |
+| 2 | Windows | Edge | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1-2NbeB6Lm5-MX8C4JpePWKY4ZjGZbsE8/view?usp=drive_link) | Không lỗi |
+| 3 | Windows | Firefox | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1_GZhDddEWKKZN4xWGTv4j39BQBpAG_tr/view?usp=drive_link) | Không lỗi |
+| 4 | macOS | Safari | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1Rm8ShvXYRAJENfSr2xxOxEPZL8SqbQMK/view?usp=drive_link) | Không lỗi |
+| 5 | Windows | Opera | desktop | Pass | [PNG Ref](https://drive.google.com/file/d/1-seJ8CDKMr3GkCNjRye1egTo1w4ESqwn/view?usp=drive_link) | Không lỗi |
+| 6 | Android | Chrome | tablet | Pass | [PNG Ref](https://drive.google.com/file/d/1GKWKnVIj9s9YPrxs0Ue_l4d49QHN-0HO/view?usp=drive_link) | Không lỗi |
+| 7 | iOS | Safari | phone | Fail | [PNG Ref](https://drive.google.com/file/d/1_kPijl5-YzTqaUat78yK_7ZtrCpsAfmi/view?usp=drive_link) | Thanh sidebar chèn làm lỗi layout của trang, rút gọn lại thì mới nhìn bình thường |
