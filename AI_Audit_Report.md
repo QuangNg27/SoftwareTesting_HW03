@@ -1721,13 +1721,38 @@ báo cáo lỗi đó vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_
 ````
 
 - **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: AI phân loại nhầm bản chất lỗi điều hướng Toast thông báo thành lỗi khả năng sử dụng (Usability USA-23) thay vì lỗi chức năng hệ thống (System Bug). Sinh viên sau đó phải chỉ đạo ở Prompt 67 ('đổi cái USA-23 phải là bug mới đúng').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI phân loại lại mục lỗi này thành lỗi chức năng hệ thống (Bug), chuyển đổi mã ID thành BUG-04 và Type thành Bug trong bug_and_usability_findings_log.md.
+
+---
+
+#### **Tác vụ 60: Phân loại lại Lỗi Điều hướng Toast Thông báo Từ Usability (USA-23) Thành Lỗi Chức năng System Bug (BUG-04) trong bug_and_usability_findings_log.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 02-08-2026
+  - **Prompt gốc:**
+```text
+đổi cái USA-23 phải là bug mới đúng
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
   **VALID**
 
 - **4. Reasoning (Lý do đánh giá):**
-  AI đã tiếp thu chỉ đạo từ sinh viên ở Tác vụ 58, bổ sung mục lỗi Usability mới USA-23 (lỗi điều hướng không tải được nội dung trang chi tiết /complaints/[id] khi nhấp trực tiếp vào Toast thông báo khi vé được xử lý) vào tệp bug_and_usability_findings_log.md đầy đủ 9 cột tiêu chuẩn (§7).
+  AI đã tiếp thu chỉ đạo từ sinh viên ở Tác vụ 59, chuyển đổi chính xác mục lỗi USA-23 thành Lỗi Chức năng Hệ thống BUG-04 với Type là Bug (Functional / System Defect) trong tệp bug_and_usability_findings_log.md đầy đủ 9 cột tiêu chuẩn (§7).
 
 - **5. Student fix (Bản sửa đổi của sinh viên):**
-  Sinh viên rà soát tệp bug_and_usability_findings_log.md, xác nhận mục lỗi USA-23 đã được bổ sung hoàn chỉnh và đồng bộ 100%.
+  Sinh viên rà soát tệp bug_and_usability_findings_log.md, xác nhận mục lỗi BUG-04 đã được phân loại đúng bản chất Lỗi Chức năng và đồng bộ 100%.
 
 ---
 
@@ -1735,14 +1760,14 @@ báo cáo lỗi đó vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_
 
 | Trạng thái | Số lượng | Tỷ lệ phần trăm |
 |---|---|---|
-| **VALID** | **40** | **67.8%** |
-| **INVALID** | **19** | **32.2%** |
+| **VALID** | **40** | **66.7%** |
+| **INVALID** | **20** | **33.3%** |
 | **INCOMPLETE** | **0** | **0.0%** |
-| **Tổng số tác vụ kiểm định** | **59** | **100.0%** |
+| **Tổng số tác vụ kiểm định** | **60** | **100.0%** |
 
 #### Đánh giá Tổng quan & Phân tích Nguyên nhân Lỗi AI (AI Error Root-Cause Analysis):
 
-1. **Phân tích các tác vụ Đánh giá INVALID (19/59 tác vụ = 32.2%):**
+1. **Phân tích các tác vụ Đánh giá INVALID (20/60 tác vụ = 33.3%):**
    * **Tác vụ 4 (`INVALID`):** AI phán đoán chưa tối ưu về mặt kiến trúc màn hình khi gộp chung màn hình Danh sách (List) và Chi tiết (Detail) phía User Side thành 1 màn hình D2 duy nhất trong `Report.md`. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 10 để ép AI phân tách thành D2 (List) và D3 (Detail), nâng phạm vi kiểm thử lên 5 màn hình.
    * **Tác vụ 11 (`INVALID`):** AI mắc 2 sai sót: (1) Phán đoán nhầm tiêu chí `IA-02-01` là `Fail` (báo sai lỗi `USA-01` thiếu dấu `*` trong khi thực tế label có dấu `*` màu đỏ rõ ràng); (2) Quên ghi file ảnh PNG ra ổ đĩa mà mới dừng ở log response. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 12 (bắt ghi file ảnh PNG qua Python) và Tác vụ 13 (bắt sửa `IA-02-01` thành `Pass` & xóa `USA-01`).
    * **Tác vụ 22 (`INVALID`):** AI dùng sai định dạng URL `file:///d:/...` trong bảng Markdown khiến trình xem Markdown Preview không kích hoạt link mở ảnh được. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 23 để chuyển đổi về định dạng đường dẫn tương đối chuẩn `./bug_screenshot/filename.png`.
@@ -1762,6 +1787,7 @@ báo cáo lỗi đó vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_
    * **Tác vụ 45 (`INVALID`):** AI để đường dẫn URL (/complaints/new, /complaints...) trong quy trình kịch bản Section 3.1 thay vì ghi rõ tên màn hình mô tả tiếng Việt. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 46 bắt AI thay thế các đường dẫn URL bằng tên màn hình tiếng Việt chi tiết.
    * **Tác vụ 47 (`INVALID`):** AI vẫn để tên tệp mac_opera cho trình duyệt Opera trong Section 4.2 của Report.md và thư mục cross_browser_sceenshot. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 48 bắt AI đổi tên tất cả các tệp ảnh Opera từ mac_opera thành win_opera và đồng bộ liên kết trong Section 4.2.
    * **Tác vụ 57 (`INVALID`):** AI để lại mục UF-02 trùng lặp cũ về Toast thông báo thành công sau khi gửi form trong Bảng 3.4 của Report.md. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 58 bắt AI xóa bỏ mục UF-02 cũ và đánh lại mã ID liên tục từ UF-01 đến UF-05.
+   * **Tác vụ 59 (`INVALID`):** AI phân loại nhầm bản chất lỗi điều hướng Toast thông báo thành lỗi Usability (USA-23) thay vì lỗi chức năng hệ thống (Bug). *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 60 bắt AI chuyển đổi mã ID thành BUG-04 và Type thành Bug trong bug_and_usability_findings_log.md.
 
 2. **Bài học kinh nghiệm & Vai trò Giám sát của Sinh viên (Human-in-the-loop Supervision):**
    - Báo cáo kiểm định thể hiện rõ nét vai trò phản biện, giám sát chặt chẽ của sinh viên đối với đầu ra của AI. Các phản hồi kịp thời của sinh viên giúp điều chỉnh AI từ các phán đoán chủ quan/sai sót ban đầu trở về kết quả kiểm thử chính xác và khách quan 100% theo đúng thực tế SUT live.
