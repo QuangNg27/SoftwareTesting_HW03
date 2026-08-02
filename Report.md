@@ -12,8 +12,8 @@
 ### 1.1. Lý do Lựa chọn Kịch bản
 Trong bài tập HW03, **Scenario D — User requests Support and Admin resolves it** được lựa chọn nhằm bao phủ trọn vẹn vòng đời quản lý và xử lý yêu cầu hỗ trợ (Support Request lifecycle) trên cả hai khía cạnh **Giao diện Người dùng (User Side)** và **Giao diện Quản trị viên (Admin Side)** theo đúng yêu cầu đề bài:
 
-- **Phía Người dùng (User Side):** Bao phủ luồng nghiệp vụ của sinh viên khi gặp sự cố trên hệ thống EMS: từ khâu khởi tạo phiếu hỗ trợ (Support Ticket) mới với tệp ảnh đính kèm minh chứng (`Screen D1`), quản lý danh sách phiếu hỗ trợ cá nhân và bộ lọc trạng thái (`Screen D2.1`), đến khâu xem chi tiết phản hồi chính thức từ nhà trường (`Screen D2.2`).
-- **Phía Quản trị viên (Admin Side):** Bao phủ luồng nghiệp vụ của Admin khi tiếp nhận và giải quyết sự cố: theo dõi danh sách toàn bộ các yêu cầu hỗ trợ, phân loại các tab trạng thái `Pending` / `Resolved` và tìm kiếm (`Screen D3`), kiểm tra chi tiết nội dung sự cố, xem ảnh minh chứng qua Lightbox, bổ sung ghi chú nội bộ (`Internal note`) và phản hồi chính thức (`Official response`) (`Screen D4`).
+- **Phía Người dùng (User Side):** Bao phủ luồng nghiệp vụ của sinh viên khi gặp sự cố trên hệ thống EMS: từ khâu khởi tạo phiếu hỗ trợ (Support Ticket) mới với tệp ảnh đính kèm minh chứng (Screen D1), quản lý danh sách phiếu hỗ trợ cá nhân và bộ lọc trạng thái (Screen D2.1), đến khâu xem chi tiết phản hồi chính thức từ nhà trường (Screen D2.2).
+- **Phía Quản trị viên (Admin Side):** Bao phủ luồng nghiệp vụ của Admin khi tiếp nhận và giải quyết sự cố: theo dõi danh sách toàn bộ các yêu cầu hỗ trợ, phân loại các tab trạng thái `Pending` / `Resolved` và tìm kiếm (Screen D3), kiểm tra chi tiết nội dung sự cố, xem ảnh minh chứng qua Lightbox, bổ sung ghi chú nội bộ (Internal note) và phản hồi chính thức (Official response) (Screen D4).
 
 ### 1.2. Danh sách 5 Màn hình Kiểm thử được Lựa chọn
 Để đảm bảo tính toàn diện và rõ ràng giữa phía User và Admin, 5 màn hình của **Scenario D** được đưa vào phạm vi kiểm thử:
@@ -368,34 +368,34 @@ Dưới đây là Khung kiểm thử (Execution Tables) hoàn chỉnh trên 5 m�
 
 ### 3.2. Danh sách 5 Người tham gia Kiểm thử (Participant Recruitment Table)
 
-
-
-| STT | Họ và Tên | Vai trò Target Profile | Email / Zalo / SĐT (Masked) |
-|---|---|---|---|
-| 1 | Participant 1 | Student | `participant1@****.edu.vn` / `090****123` |
-| 2 | Participant 2 | Student | `participant2@****.edu.vn` / `091****456` |
-| 3 | Participant 3 | Student | `participant3@****.edu.vn` / `098****789` |
-| 4 | Participant 4 | Event-goer / Guest | `participant4@****.com` / `093****321` |
-| 5 | Participant 5 | Student / User | `participant5@****.edu.vn` / `097****654` |
+| STT | Họ và Tên người tham gia | Vai trò Target Profile | Email che mờ | SĐT che mờ (Masked Phone) |
+|---|---|---|---|---|
+| **P1** | Nguyễn Vũ Minh Quang | Sinh viên | minhquang172005@gmail.com | 0778****444 |
+| **P2** | Phạm Hồng Thái Dương | Sinh viên | phtduong23@clc.fitus.edu.vn | 0369****254 |
+| **P3** | Võ Nhật Hào | Sinh viên | vhao23@clc.fitus.edu.vn | 0765****575 |
+| **P4** | Ngô Thế Đạt | Sinh viên | thedatngo@gmail.com | 0923****570 |
+| **P5** | Đặng Thị Xuyên Linh | Khách | linhdangthixuyen@gmail.com | 0389****604 |
 
 ### 3.3. Bảng Kết quả Thu thập Chỉ số Kiểm thử (Execution Metrics Table)
 
-| Người tham gia | Trạng thái (Task Success Rate) | Thời gian hoàn thành (Time on Task) | Số lỗi / Ngập ngừng (Errors / Hesitations) | Điểm SUS / UEQ-S | Ghi chú phản hồi / Điểm nghẽn (Friction Points) |
+| Người tham gia | Trạng thái (Task Success Rate) | Thời gian hoàn thành (Time on Task) | Số lỗi / Ngập ngừng (Errors / Hesitations) | Điểm SUS (/100) | Ghi chú phản hồi / Điểm nghẽn (Friction Points) |
 |---|---|---|---|---|---|
-| Participant 1 | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
-| Participant 2 | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
-| Participant 3 | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
-| Participant 4 | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
-| Participant 5 | *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
-| **Trung bình (Mean)** | **TBD%** | **TBD** | **TBD** | **TBD / 100** |  |
+| **Nguyễn Vũ Minh Quang** | Completed | 3 phút 13 giây | 2 | **35.0** | Nhãn rõ ràng, không đính kèm file nên chưa trải nghiệm ô đính kèm. Toast thông báo khi click vào thì load bị fail. |
+| **Phạm Hồng Thái Dương** | Completed | 3 phút | 1 | **72.5** | Giao diện rõ ràng, thao tác mượt mà, theo dõi trạng thái yêu cầu dễ dàng. Toast thông báo khi click vào thì load bị fail. |
+| **Võ Nhật Hào** | Partial | 2 phút 37 giây | 1 (*failed to get notification*) | **50.0** | Toast thông báo khi click vào thì load bị fail. |
+| **Ngô Thế Đạt** | Completed | 4 phút 07 giây | 2 | **27.5** | Nhãn ô nhập liệu rõ ràng nhưng điểm SUS thấp do thiếu hiệu ứng phản hồi và hướng dẫn xử lý sự cố. Toast thông báo khi click vào thì load bị fail. |
+| **Đặng Thị Xuyên Linh** | Completed | 3 phút 24 giây | 0 | **85.0** | Giao diện trực quan, không gặp sự cố, theo dõi trạng thái yêu cầu thuận tiện. |
+| **Trung bình (Mean)** | **100% (4/5 Complete, 1/5 Partial)** | **2 phút 18 giây** | **1.2 lỗi** | **54.0 / 100** | **Xếp loại: Below Average (< 68) - Cần cải tiến UX** |
 
 ### 3.4. Phân tích Phản hồi Usability & Đề xuất Cải tiến (Usability Findings & Recommendations)
-- **Phân loại vấn đề & Thang điểm Severity (0–4):** Nhóm các điểm nghẽn trải nghiệm, phân định lỗi isolated bugs với lỗi systemic design issues.
 
 | ID phát hiện | Màn hình vi phạm | Mô tả điểm nghẽn Usability | Severity (0–4) | Đề xuất cải tiến (Actionable Recommendation) |
 |---|---|---|---|---|
-| *TBD* | *TBD* | *TBD* | *TBD* | *TBD* |
-
+| **UF-01** | Màn hình D1 (`/complaints/new`) | Nút `Submit request` vẫn click được khi form còn trống, không có trạng thái vô hiệu hóa (disabled). | 2 - Medium | Bổ sung thuộc tính `disabled` cho nút Submit cho đến khi tất cả ô bắt buộc được nhập đúng định dạng. |
+| **UF-02** | Toàn hệ thống User Side | Nút Tạo Yêu cầu Hỗ trợ bị đặt ẩn trong Popup / Menu phụ thay vì nằm vị trí nổi bật trực quan. | 1 - Minor | Đưa nút "Gửi Yêu cầu Hỗ trợ" ra thanh Header chính hoặc Navigation Bar cố định để sinh viên dễ truy cập. |
+| **UF-03** | Màn hình D1 (`/complaints/new`) | Hầu hết người dùng (4/5) bỏ qua thao tác đính kèm tệp/ảnh minh chứng do khu vực Upload chưa thiết kế nổi bật. | 1 - Minor | Không cần điều chỉnh |
+| **UF-04** | Màn hình D2.1 & D2.2 | Danh sách vé và chi tiết vé không tự động cập nhật trạng thái mới theo thời gian thực (Real-time update). | 1 - Minor | Tích hợp WebSockets hoặc Polling tự động làm mới trạng thái vé khi phía Admin phản hồi. |
+| **UF-05** | Màn hình D2.1 & D2.2 | Nhấp vào Toast thông báo khi vé được Admin xử lý xong bị lỗi không tải được nội dung trang chi tiết. | 2 - Medium | Sửa lỗi điều hướng routing link trong handler event click của Toast Notification, đảm bảo truyền đúng Complaint ID và render mượt mà trang chi tiết. |
 
 ---
 

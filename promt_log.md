@@ -301,3 +301,38 @@ Thêm probe question cho task 2 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_H
 ```text
 đưa 2 cái lỗi UI trong phần 4.2.4 và 4.2.5 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] ra bug log
 ```
+
+### [02-08-2026 20:49] | Gemini
+```text
+Dựa trên kết quả @[HW03 EMS - Usability Testing & SUS Survey (Scenario D).csv] và đọc lại đề @[2026.HW03.GUI Usability EMS_En.pdf] phần Task 2 và yêu cầu user tesing evidence hãy hoàn thiện phần đó trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] và tạo thêm một file markdown về user-tesing_evidence
+```
+
+### [02-08-2026 20:53] | Gemini
+```text
+chỗ người tham gia điền đầy đủ tên vào
+```
+
+### [02-08-2026 21:03] | Gemini
+```text
+Lấy chi tiết câu hỏi cho vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\user_testing_evidence.md] luôn
+```
+
+### [02-08-2026 21:16] | Gemini
+```text
+Bổ sung một phần trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\user_testing_evidence.md] về Note trong quá trình quan sát người dùng: mất thời gian để tìm ra trang yêu cầu hỗ trợ và có lỗi là load không được khi nhấn vào toast thông báo khi yêu cầu được xử lý
+```
+
+### [02-08-2026 21:28] | Gemini
+```text
+thêm cái lỗi load notification vào section 3.4 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] luôn
+```
+
+### [02-08-2026 21:35] | Gemini
+```text
+bỏ UF-02
+```
+
+### [02-08-2026 21:37] | Gemini
+```text
+báo cáo lỗi đó vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md]
+```
