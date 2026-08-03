@@ -1,6 +1,6 @@
 # Bug and Usability Findings Log - HW03 EMS
 
-Tài liệu nhật ký ghi nhận toàn bộ Lỗi hệ thống (Bugs) và Lỗi khả năng sử dụng (Usability Issues) phát hiện được trên hệ thống EMS live theo đúng quy định tại Section 7 của `2026.HW03.GUI Usability EMS_En.pdf`.
+Tên tài khoản dùng để submit trên google form: nmquang23@clc.fitus.edu.vn
 
 ---
 
