@@ -147,4 +147,8 @@ Trong quá trình điều phối quan sát 5 người dùng thực hiện kịch
 
 ## 8. Video minh chứng (User Testing Video Proof)
 
-Google Drive Link: https://drive.google.com/drive/u/1/folders/1x-6CQYrPoGaysau9hVXwFjmbATTtC24A
+- Nguyễn Vũ Minh Quang: https://youtu.be/6CRKXjjvahk
+- Phạm Hồng Thái Dương: https://youtu.be/HMjbi9qQR_M
+- Võ Nhật Hào: https://youtu.be/X0kFsTaf9_4
+- Đặng Thị Xuyên Linh: https://youtu.be/3xoT0V02qnI
+- Ngô Thế Đạt: https://youtu.be/sJFce3JMDDc

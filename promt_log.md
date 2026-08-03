@@ -341,3 +341,38 @@ báo cáo lỗi đó vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_
 ```text
 đổi cái USA-23 phải là bug mới đúng
 ```
+
+### [03-08-2026 20:57] | Gemini
+```text
+đổi bug 1, 2, 3 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] là Usability đi
+```
+
+### [03-08-2026 20:58] | Gemini
+```text
+lỗi format rồi
+```
+
+### [03-08-2026 21:16] | Gemini
+```text
+bổ sung vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] bug không chỉnh được số dòng mỗi trang ở màn hình danh sách yêu cầu của cả User và Admin
+```
+
+### [03-08-2026 21:25] | Gemini
+```text
+thêm một cái về usability là độ nhạy của thanh tìm kiếm ở màn hình danh sách yêu cầu của User rất kém
+```
+
+### [03-08-2026 21:27] | Gemini
+```text
+kiểu nó không nhận tín hiệu phím liên tục được á
+```
+
+### [03-08-2026 21:29] | Gemini
+```text
+cho nó thành bug đi
+```
+
+### [03-08-2026 21:52] | Gemini
+```text
+cập nhật Form-submission timestamp tất cả vào 21:51
+```

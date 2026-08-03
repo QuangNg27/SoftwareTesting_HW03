@@ -7,7 +7,7 @@ Tài liệu này ghi nhận kết quả kiểm định chất lượng các ph�
 #### **Tác vụ 1: Thiết lập quy chuẩn AI Audit Log & Cập nhật Skill Bug Report theo HW03 EMS**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 1. thiết lập skill @[ai_audit_prompt_log.md] áp dụng cho toàn bộ promt trong conversation này
@@ -55,7 +55,7 @@ Tài liệu này ghi nhận kết quả kiểm định chất lượng các ph�
 #### **Tác vụ 2: Đồng bộ 100% nguyên văn phản hồi chat AI ở Tác vụ 1 theo Quy trình Tự động Section 5**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 lấy output giống 100% trong conversation không được lược bớt
@@ -84,7 +84,7 @@ lấy output giống 100% trong conversation không được lược bớt
 #### **Tác vụ 3: Cập nhật & Nâng cấp Quy chuẩn Skill trong ai_audit_prompt_log.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 có thể chỉnh sửa skill để đảm bảo luôn lấy được output như vậy
@@ -128,7 +128,7 @@ có thể chỉnh sửa skill để đảm bảo luôn lấy được output nh�
 #### **Tác vụ 4: Phân tích Đề bài HW03 & Khởi tạo Main Report cho Scenario D (Report.md)**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 phân tích yêu cầu đề bài về main report trong @[2026.HW03.GUI Usability EMS_En.pdf] rồi ghi vào @[Report.md] chọn Scenario D, làm đến phần checklist execution cho các screen (chưa cần điền)
@@ -180,7 +180,7 @@ phân tích yêu cầu đề bài về main report trong @[2026.HW03.GUI Usabili
 #### **Tác vụ 5: Đồng bộ 100% Tiêu chí Checklist từ shared_gui_checklist.md vào Report.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 dùng checklist từ @[shared_gui_checklist.md]
@@ -222,7 +222,7 @@ dùng checklist từ @[shared_gui_checklist.md]
 #### **Tác vụ 6: Chuẩn hóa Cấu trúc Bảng Thực thi Task 1B trong Report.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 sử dụng @[shared_gui_checklist.md] cho mỗi screen chỉ cần để cột Verdict(Pass/Fail/NA) và Ghi chú lỗi (Notes)
@@ -263,7 +263,7 @@ sử dụng @[shared_gui_checklist.md] cho mỗi screen chỉ cần để cột 
 #### **Tác vụ 7: Sử dụng Puppeteer MCP Điều hướng Đến Trang EMS Live**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 Hãy dùng Puppeteer MCP mở trang  htps://promoter-starboard-prude.ngrok-free.dev
@@ -295,7 +295,7 @@ Hãy dùng Puppeteer MCP mở trang  htps://promoter-starboard-prude.ngrok-free.
 #### **Tác vụ 8: Cấu hình Puppeteer Khởi chạy với Thư mục User Profile Riêng biệt**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 cấu hỉnh puppeteer mở browser bằng profile của tôi
@@ -356,7 +356,7 @@ cấu hỉnh puppeteer mở browser bằng profile của tôi
 #### **Tác vụ 9: Tự động Đăng nhập Tài khoản Sinh viên qua Microsoft SSO**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 Hãy dùng Puppeteer MCP mở trang  htps://promoter-starboard-prude.ngrok-free.dev, dùng option Sinh viên nhập tài khoản 23127462@student.hcmus.edu.vn / Qu@ng2702
@@ -388,7 +388,7 @@ Hãy dùng Puppeteer MCP mở trang  htps://promoter-starboard-prude.ngrok-free.
 #### **Tác vụ 10: Phân tách Màn hình D2 thành Danh sách (List) và Chi tiết (Detail) trong Section 1.2 của Report.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 tách màn hình D2 ra một cái là List 1 cái là Detail phần section 1.2
@@ -434,7 +434,7 @@ tách màn hình D2 ra một cái là List 1 cái là Detail phần section 1.2
 #### **Tác vụ 11: Thực thi Kiểm thử Màn hình D1 (Create Support Request Form) & Ghi nhận Lỗi**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 test screen D1 và điền vào checklist trong Report.md (không được chỉnh sửa gì khác ngoài bảng checklist của screen D1 (mục 2.1), nếu có bug thì điền vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] kèm hình vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_screenshot]. Nhập pass là Qu@n9462
@@ -483,7 +483,7 @@ test screen D1 và điền vào checklist trong Report.md (không được chỉ
 #### **Tác vụ 12: Trích xuất & Lưu trữ Trực tiếp các Tệp Ảnh Minh chứng Lỗi (PNG Screenshots) vào Thư mục bug_screenshot**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 ảnh chụp bug đâu sao không lưu vào @[bug_screenshot]
@@ -510,7 +510,7 @@ Tất cả các tài liệu kiểm thử ([Report.md](file:///d:/NAM_3/HK3/KTPM/
 #### **Tác vụ 13: Xóa Mục Lỗi USA-01, Cập nhật Tiêu chí IA-02-01 thành Pass trong Report.md & Dọn dẹp File Ảnh**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 xóa bug USA-01 đi vì nó có dấu * mà
@@ -553,7 +553,7 @@ xóa bug USA-01 đi vì nó có dấu * mà
 #### **Tác vụ 14: Tự động Điều chỉnh AI Audit Report Đánh giá INVALID cho các Prompts có Sự Điều chỉnh**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 tự động điều chỉnh AI Audit Report những promt mà có sự điều chỉnh sau đó (đừng để Valid)
@@ -606,7 +606,7 @@ tự động điều chỉnh AI Audit Report những promt mà có sự điều 
 #### **Tác vụ 15: Cấu hình Kỹ năng Agent Skill Auto-Trigger trong Google Antigravity cho gui-checklist-execution**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 tạo agent skill GUI checklist execution rồi thiết lập
@@ -631,7 +631,7 @@ tạo agent skill GUI checklist execution rồi thiết lập
 #### **Tác vụ 16: Khởi tạo & Cấu hình Auto-Trigger cho 2 Agent Skills ai-audit-prompt-log và bug-report**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 set cho 2 skill kia luôn
@@ -656,7 +656,7 @@ set cho 2 skill kia luôn
 #### **Tác vụ 17: Xác nhận An toàn Cấu trúc Thư mục Agent Skills và Hướng dẫn Xóa Thư mục Tạm skill/**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 thế tôi xóa @[skill] được rồi nhỉ
@@ -681,7 +681,7 @@ thế tôi xóa @[skill] được rồi nhỉ
 #### **Tác vụ 18: Tùy chỉnh Section 1.1 trong Report.md Tập trung Chuyên sâu Phía Người dùng (User Side)**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 tùy chỉnh lại section 1.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] chỉ còn phía User thôi
@@ -706,7 +706,7 @@ tùy chỉnh lại section 1.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW
 #### **Tác vụ 19: Cập nhật Bảng Checklist 2.1 (D1) trong Report.md: Xóa Ghi chú cho Tiêu chí Pass, Giữ lại Ghi chú cho Fail và NA**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 cập nhật bảng checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]  cái nào pass rồi thì bỏ ghi chú lỗi còn NA/Fail thì giữ
@@ -731,7 +731,7 @@ cập nhật bảng checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting
 #### **Tác vụ 20: Cập nhật Quy tắc Cột Ghi Chú Lỗi (Notes Rule) vào Agent Skill gui-checklist-execution**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 cập nhật skill phần ghi chú như vậy (nếu có)
@@ -756,7 +756,7 @@ cập nhật skill phần ghi chú như vậy (nếu có)
 #### **Tác vụ 21: Bổ sung Báo cáo Bug & Usability cho Tiêu chí IA-04-01 (BUG-02) và IA-04-10 (USA-03)**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 thêm báo cáo bug cho IA-04-01, IA-04-10
@@ -781,7 +781,7 @@ thêm báo cáo bug cho IA-04-01, IA-04-10
 #### **Tác vụ 22: Chuẩn hóa Định dạng Cột Screenshot ref trong Nhật ký Lỗi thành Liên kết Markdown Có thể Click**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 chỉnh screenshot ref bấm được
@@ -806,7 +806,7 @@ chỉnh screenshot ref bấm được
 #### **Tác vụ 23: Khắc phục Định dạng Đường dẫn Ảnh Minh chứng trong Nhật ký Lỗi thành Đường dẫn Tương đối Chuẩn `./bug_screenshot/filename.png`**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 không bấm được
@@ -831,7 +831,7 @@ không bấm được
 #### **Tác vụ 24: Rà soát 100% Tiêu chí Fail trong Checklist 2.1 và Đồng bộ Đầy đủ Nhật ký Lỗi USA-01 (IA-02-03)**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 rà soát lại item nào fail ở checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] rồi kiểm tra @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] xem có thiếu không thì điền thêm
@@ -856,7 +856,7 @@ rà soát lại item nào fail ở checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\
 #### **Tác vụ 25: Bổ sung Báo cáo Lỗi Usability USA-04 cho Tiêu chí IA-04-13 vào Nhật ký Lỗi bug_and_usability_findings_log.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 điền thêm vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] cho item IA-04-13 của section 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
@@ -881,7 +881,7 @@ rà soát lại item nào fail ở checklist 2.1 trong @[d:\NAM_3\HK3\KTPM\HW03\
 #### **Tác vụ 26: Ghi nhận Nhật ký Lỗi Usability cho Màn hình D2 (My Support Requests List) trong Section 2.2 của Report.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 log bug cho section 2.2 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
@@ -906,7 +906,7 @@ log bug cho section 2.2 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Repo
 #### **Tác vụ 27: Thực thi GUI Checklist Execution cho Màn hình D2.2 tại /complaints/18**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 truy cập đây https://prod-dev.ems-fitus.cloud/complaints/18, thực hiện GUI checklist execution dùng skill  (có lỗi thì chụp vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_screenshot] )  đã có cho section 2.3 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
@@ -931,7 +931,7 @@ truy cập đây https://prod-dev.ems-fitus.cloud/complaints/18, thực hiện G
 #### **Tác vụ 28: Chụp Ảnh Màn hình D2.2 (/complaints/18) và Cập nhật Thư mục bug_screenshot/**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 hình truy cập sai địa chỉ rồi
@@ -956,7 +956,7 @@ hình truy cập sai địa chỉ rồi
 #### **Tác vụ 29: Giải mã Chuỗi Base64 Trích xuất Ảnh PNG Thực tế (>33KB) và Khắc phục Lỗi 0-byte File trong Thư mục bug_screenshot/**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 ảnh chụp không bật lên được
@@ -981,7 +981,7 @@ hình truy cập sai địa chỉ rồi
 #### **Tác vụ 30: Điều chỉnh Chuẩn hóa Bảng Nhật ký Lỗi bug_and_usability_findings_log.md & Section 2.3 trong Report.md theo Thực tế Màn hình D2.2 (/complaints/18)**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 điều chỉnh lại bug log của section 2.3
@@ -1006,7 +1006,7 @@ hình truy cập sai địa chỉ rồi
 #### **Tác vụ 31: Bổ sung Luồng Quản trị Admin (D3 & D4) vào Section 1.1, 1.2 & Khởi tạo Bảng Thực thi 2.4 (D3), 2.5 (D4) trong Report.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 sửa section 1.1 và 1.2 thêm phần của Admin theo đề @[2026.HW03.GUI Usability EMS_En.pdf], thêm 2 checklist cho màn D3, D4
@@ -1031,7 +1031,7 @@ sửa section 1.1 và 1.2 thêm phần của Admin theo đề @[2026.HW03.GUI Us
 #### **Tác vụ 32: Hủy Kết quả Test (Xóa Verdict & Notes) trên Bảng 2.4 (D3) và 2.5 (D4) trong Report.md theo Chỉ đạo của Sinh viên**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 hủy kết quả test của màn D3, D4 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
@@ -1056,7 +1056,7 @@ hủy kết quả test của màn D3, D4 trong @[d:\NAM_3\HK3\KTPM\HW03\Software
 #### **Tác vụ 33: Thực thi GUI Checklist Execution cho Màn hình D3 (Admin Support Requests List at /dashboard/admin/complaints) & Điền Bảng 2.4 trong Report.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 vào trang https://prod-dev.ems-fitus.cloud/dashboard/admin/complaints, dùng tài khoản admin: admin@gmail.com/Admin@123, thực hiện /gui-checklist-execution cho màn hình D3 (section 2.4 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] )
@@ -1081,7 +1081,7 @@ vào trang https://prod-dev.ems-fitus.cloud/dashboard/admin/complaints, dùng t�
 #### **Tác vụ 34: Cập nhật Quy định Cố định Kích thước Màn hình (Screen Size Consistency Rule) vào Skill gui-checklist-execution**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 chỉnh lại skill là giữ nguyên kích thước màn hình khi test chứ đang màn hình to rồi thu nhỏ về xong chụp bug là không phù hợp
@@ -1106,7 +1106,7 @@ chỉnh lại skill là giữ nguyên kích thước màn hình khi test chứ �
 #### **Tác vụ 35: Cập nhật Ngoại lệ Thu nhỏ Kích thước Màn hình khi Kiểm thử Responsive Layout (IA-01-07) vào Skill gui-checklist-execution**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 có thể thu lại để test cho việc responsive
@@ -1131,7 +1131,7 @@ có thể thu lại để test cho việc responsive
 #### **Tác vụ 36: Ghi nhận Nhật ký Lỗi Bug & Usability cho các Tiêu chí Fail trên Màn hình D4 trong bug_and_usability_findings_log.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 cập bug log cho item nào fail của checklist section 2.5 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] (không cần chạy test)
@@ -1156,7 +1156,7 @@ cập bug log cho item nào fail của checklist section 2.5 @[d:\NAM_3\HK3\KTPM
 #### **Tác vụ 37: Khởi tạo Liên kết Ảnh Minh chứng Chuẩn Tương đối (Screenshot Ref Links) cho các Mục Lỗi Màn hình D4 trong bug_and_usability_findings_log.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 tạo sẵn đường link ảnh cho các bug vừa add cho tôi @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md]
@@ -1181,7 +1181,7 @@ tạo sẵn đường link ảnh cho các bug vừa add cho tôi @[d:\NAM_3\HK3\
 #### **Tác vụ 38: Chuẩn hóa Tên Màn hình Đầy đủ (Explicit Screen Names) trong bug_and_usability_findings_log.md Thay cho Mã Viết tắt**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 cập nhật tên màn hình trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] ghi rõ ra chứ đừng ghi mã
@@ -1206,7 +1206,7 @@ cập nhật tên màn hình trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03
 #### **Tác vụ 39: Chuẩn hóa Tham số URL [id] Cho các Đường dẫn Chi tiết trong bug_and_usability_findings_log.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 mấy url có số thì để là [id]
@@ -1231,7 +1231,7 @@ mấy url có số thì để là [id]
 #### **Tác vụ 40: Đọc Đề bài HW03 & Khởi tạo Khung Dàn bài (Outline) cho Task 2 & Task 3 trong Report.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 đọc lại đề @[2026.HW03.GUI Usability EMS_En.pdf] ,xem yêu cầu của task 2 và 3 rồi tạo outline trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
@@ -1256,7 +1256,7 @@ mấy url có số thì để là [id]
 #### **Tác vụ 41: Phân tách Ma trận Kiểm thử Tương thích Section 4.2 Thành Các Bảng Riêng biệt Cho Từng Màn hình**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 bảng ma trận 4.2 chia ra mỗi màn một bảng
@@ -1281,7 +1281,7 @@ bảng ma trận 4.2 chia ra mỗi màn một bảng
 #### **Tác vụ 42: Rút gọn Tên Hệ điều hành, Trình duyệt và Lớp Thiết bị theo Mẫu Đề bài HW03 trong Section 4.2**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 ghi tên hệ điều hành, browser, device ngắn gọn giống như này thôi  3 operatng systems — e.g. Windows, macOS, and Android or iOS.
@@ -1309,7 +1309,7 @@ mobile).
 #### **Tác vụ 43: Loại bỏ Trường hợp Android + Chrome khỏi Các Bảng Ma trận Kiểm thử Tương thích Section 4.2**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 bỏ trường hợp android + chrome
@@ -1334,7 +1334,7 @@ bỏ trường hợp android + chrome
 #### **Tác vụ 44: Chuyển đổi Trình duyệt Samsung Internet Thành Chrome cho Thiết bị Android Tablet trong Section 4.2**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 đổi samsung internet thành chrome
@@ -1359,7 +1359,7 @@ bỏ trường hợp android + chrome
 #### **Tác vụ 45: Tinh chỉnh Task 2 trong Report.md Tập trung 100% Phía Người dùng (User Side)**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 phần Task 2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]  chỉ cần giữ luồng user thôi
@@ -1384,7 +1384,7 @@ phần Task 2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]  chỉ c�
 #### **Tác vụ 46: Chuyển đổi Các Đường dẫn URL Thành Tên Màn hình Mô tả Tiếng Việt trong Section 3.1**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 đổi đường dẫn thành tên màn hình (section 3.1 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] )
@@ -1409,7 +1409,7 @@ phần Task 2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]  chỉ c�
 #### **Tác vụ 47: Chuyển đổi Đường dẫn Thư mục Ảnh Minh chứng Section 4.2 Sang ./cross_browser_sceenshot/**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 đổi thư mục các ảnh minh chứng ở section 4.2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] sang @[cross_browser_sceenshot]
@@ -1427,14 +1427,14 @@ phần Task 2 @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]  chỉ c�
   Lỗi AI: Ban đầu AI vẫn để tên tệp mac_opera cho trình duyệt Opera trong Section 4.2 của Report.md và thư mục cross_browser_sceenshot, dẫn đến sinh viên phải chỉ đạo đổi thành win_opera ở Prompt 55 ('chỉnh tên file ảnh trong cross_browser_sceenshot cái nào mac_opera thì đổi thành win_opera').
 
 - **5. Student fix (Bản sửa đổi của sinh viên):**
-  Sinh viên đã chỉ đạo AI đổi tên tất cả các tệp ảnh Opera trong thư mục cross_browser_sceenshot từ mac_opera sang win_opera và đồng bộ liên kết trong Section 4.2 của Report.md.
+  Sinh viên đã chỉ đạo AI đổi tên tất cả các tệp ảnh Opera trong thư mục cross_browser_sceenshot từ mac_opera thành win_opera và đồng bộ liên kết trong Section 4.2 của Report.md.
 
 ---
 
 #### **Tác vụ 48: Đổi Tên Tệp Ảnh và Liên kết Minh chứng Trình duyệt Opera Từ mac_opera Thành win_opera**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 chỉnh tên file ảnh trong @[cross_browser_sceenshot] cái nào mac_opera thì đổi thành win_opera
@@ -1459,7 +1459,7 @@ chỉnh tên file ảnh trong @[cross_browser_sceenshot] cái nào mac_opera th�
 #### **Tác vụ 49: Xây dựng Bộ Câu hỏi Khảo sát Chuẩn hóa SUS (10 Items) & Quy tắc Tính điểm trong Task 2**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 xây dựng các câu hỏi SUS ở phần task 2
@@ -1484,7 +1484,7 @@ xây dựng các câu hỏi SUS ở phần task 2
 #### **Tác vụ 50: Cung cấp Kịch bản Google Apps Script Tự động Tạo Google Form Khảo sát SUS 10 Câu hỏi Chuẩn hóa**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 Tạo google form
@@ -1509,7 +1509,7 @@ Tạo google form
 #### **Tác vụ 51: Bổ sung Section 3.1.2 Danh Sách Câu Hỏi Phỏng Vấn Đào Sâu (Open-ended Probe Questions) vào Task 2 trong Report.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 Thêm probe question cho task 2 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md]
@@ -1534,7 +1534,7 @@ Thêm probe question cho task 2 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_H
 #### **Tác vụ 52: Trích xuất & Đưa 2 Lỗi Usability Layout Sidebar (USA-21 & USA-22) trong Section 4.2.4 và 4.2.5 trong Report.md ra bug log**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 đưa 2 cái lỗi UI trong phần 4.2.4 và 4.2.5 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] ra bug log
@@ -1559,7 +1559,7 @@ Thêm probe question cho task 2 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_H
 #### **Tác vụ 53: Hoàn thiện Task 2 trong Report.md & Tạo Tệp Minh chứng Kiểm thử Người dùng user_testing_evidence.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 Dựa trên kết quả @[HW03 EMS - Usability Testing & SUS Survey (Scenario D).csv] và đọc lại đề @[2026.HW03.GUI Usability EMS_En.pdf] phần Task 2 và yêu cầu user tesing evidence hãy hoàn thiện phần đó trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] và tạo thêm một file markdown về user-tesing_evidence
@@ -1584,7 +1584,7 @@ Dựa trên kết quả @[HW03 EMS - Usability Testing & SUS Survey (Scenario D)
 #### **Tác vụ 54: Điền Đầy đủ Họ và Tên Thực tế của 5 Người dùng trong Bảng 3.3 (Report.md) & Các Bảng Minh chứng**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 chỗ người tham gia điền đầy đủ tên vào
@@ -1609,7 +1609,7 @@ chỗ người tham gia điền đầy đủ tên vào
 #### **Tác vụ 55: Bổ sung Bảng Chi tiết 10 Câu hỏi SUS (Q1-Q10) & 5 Câu hỏi Phỏng vấn Đào sâu (PQ1-PQ5) vào user_testing_evidence.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 Lấy chi tiết câu hỏi cho vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\user_testing_evidence.md] luôn
@@ -1634,7 +1634,7 @@ Lấy chi tiết câu hỏi cho vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW
 #### **Tác vụ 56: Bổ sung Section 6 Ghi chú Quan sát Trực tiếp (NOTE-01 Navigation Friction & NOTE-02 Toast Defect) vào user_testing_evidence.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 Bổ sung một phần trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\user_testing_evidence.md] về Note trong quá trình quan sát người dùng: mất thời gian để tìm ra trang yêu cầu hỗ trợ và có lỗi là load không được khi nhấn vào toast thông báo khi yêu cầu được xử lý
@@ -1659,7 +1659,7 @@ Bổ sung một phần trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\user_
 #### **Tác vụ 57: Bổ sung Mục Lỗi Usability UF-06 (Lỗi điều hướng Toast thông báo khi vé được xử lý) vào Section 3.4 trong Report.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 thêm cái lỗi load notification vào section 3.4 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\Report.md] luôn
@@ -1684,7 +1684,7 @@ thêm cái lỗi load notification vào section 3.4 trong @[d:\NAM_3\HK3\KTPM\HW
 #### **Tác vụ 58: Loại bỏ Mục Lỗi Usability UF-02 cũ khỏi Bảng 3.4 (Report.md) & Đánh lại Mã ID UF-01 đến UF-05**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 bỏ UF-02
@@ -1709,7 +1709,7 @@ bỏ UF-02
 #### **Tác vụ 59: Bổ sung Báo cáo Lỗi Usability USA-23 (Lỗi điều hướng Toast thông báo khi vé được xử lý) vào bug_and_usability_findings_log.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 báo cáo lỗi đó vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md]
@@ -1724,7 +1724,7 @@ báo cáo lỗi đó vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_
   **INVALID**
 
 - **4. Reasoning (Lý do đánh giá):**
-  Lỗi AI: AI phân loại nhầm bản chất lỗi điều hướng Toast thông báo thành lỗi khả năng sử dụng (Usability USA-23) thay vì lỗi chức năng hệ thống (System Bug). Sinh viên sau đó phải chỉ đạo ở Prompt 67 ('đổi cái USA-23 phải là bug mới đúng').
+  Lỗi AI: AI phân loại nhầm bản chất lỗi điều hướng Toast thông báo thành lỗi khả năng sử dụng (Usability USA-23) thay vì lỗi chức năng hệ thống (Bug). Sinh viên sau đó phải chỉ đạo ở Prompt 67 ('đổi cái USA-23 phải là bug mới đúng').
 
 - **5. Student fix (Bản sửa đổi của sinh viên):**
   Sinh viên đã chỉ đạo AI phân loại lại mục lỗi này thành lỗi chức năng hệ thống (Bug), chuyển đổi mã ID thành BUG-04 và Type thành Bug trong bug_and_usability_findings_log.md.
@@ -1734,7 +1734,7 @@ báo cáo lỗi đó vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_
 #### **Tác vụ 60: Phân loại lại Lỗi Điều hướng Toast Thông báo Từ Usability (USA-23) Thành Lỗi Chức năng System Bug (BUG-04) trong bug_and_usability_findings_log.md**
 - **1. Prompt + tool (Câu lệnh + Công cụ):**
   - **Công cụ:** Gemini (Gemini 3.6 Flash)
-  - **Thời gian:** 02-08-2026
+  - **Thời gian:** 03-08-2026
   - **Prompt gốc:**
 ```text
 đổi cái USA-23 phải là bug mới đúng
@@ -1756,18 +1756,193 @@ báo cáo lỗi đó vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_
 
 ---
 
+#### **Tác vụ 61: Chuyển đổi Các Mục Lỗi BUG-01, BUG-02, BUG-03 Thành Lỗi Khả năng Sử dụng (Usability USA-23, USA-24, USA-25) trong bug_and_usability_findings_log.md & Report.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 03-08-2026
+  - **Prompt gốc:**
+```text
+đổi bug 1, 2, 3 trong @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] là Usability đi
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **INVALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  Lỗi AI: Khi chèn các dòng lỗi Usability mới vào vị trí đầu bảng, AI vô tình tạo ra dòng trống ngắt quãng cú pháp Bảng Markdown làm hỏng giao diện hiển thị. Sinh viên sau đó phải phát hiện và phản hồi ở Prompt 69 ('lỗi format rồi').
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên đã chỉ đạo AI loại bỏ các dòng trống thừa, xếp đặt các dòng lỗi Usability USA-23, USA-24, USA-25 theo thứ tự liền mạch ở cuối bảng, khôi phục giao diện Bảng Markdown hoàn chỉnh 100%.
+
+---
+
+#### **Tác vụ 62: Khắc phục Lỗi Định dạng Bảng Markdown & Chuẩn hóa Cấu trúc Liền mạch Bảng bug_and_usability_findings_log.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 03-08-2026
+  - **Prompt gốc:**
+```text
+lỗi format rồi
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã tiếp thu phản hồi sửa lỗi định dạng từ sinh viên ở Tác vụ 61, tiến hành loại bỏ toàn bộ các dòng trống bị ngắt quãng, xếp đặt các mục lỗi Usability USA-23, USA-24, USA-25 vào cuối bảng theo thứ tự liên tục 100%, bảo đảm Bảng Markdown hiển thị chuẩn xác, đẹp mắt và liền mạch.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên kiểm tra rà soát tệp bug_and_usability_findings_log.md, xác nhận giao diện Bảng Markdown đã được sửa lỗi định dạng và hiển thị hoàn hảo.
+
+---
+
+#### **Tác vụ 63: Bổ sung Lỗi Chức năng System Bug (BUG-02) Không Chỉnh Được Số Dòng Mỗi Trang vào bug_and_usability_findings_log.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 03-08-2026
+  - **Prompt gốc:**
+```text
+bổ sung vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_usability_findings_log.md] bug không chỉnh được số dòng mỗi trang ở màn hình danh sách yêu cầu của cả User và Admin
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã bổ sung thành công mục Lỗi Chức năng Hệ thống mới (BUG-02) với đầy đủ 9 cột quy định tại §7 HW03 EMS vào tệp bug_and_usability_findings_log.md: ghi nhận lỗi thành phần chọn số dòng hiển thị trên mỗi trang (Rows per page / Page size selector) không hoạt động/không cho phép thay đổi trên cả 2 màn hình danh sách `/complaints` (User Side) và `/dashboard/admin/complaints` (Admin Side).
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên rà soát tệp bug_and_usability_findings_log.md, xác nhận mục lỗi BUG-02 đã được bổ sung đầy đủ 9 cột tiêu chuẩn và bảo tồn định dạng bảng Markdown hoàn hảo.
+
+---
+
+#### **Tác vụ 64: Bổ sung Lỗi Khả năng Sử dụng (Usability USA-26) Độ Nhạy Thanh Tìm Kiếm Kém vào bug_and_usability_findings_log.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 03-08-2026
+  - **Prompt gốc:**
+```text
+thêm một cái về usability là độ nhạy của thanh tìm kiếm ở màn hình danh sách yêu cầu của User rất kém
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã bổ sung thành công mục Lỗi Usability mới (USA-26) với đầy đủ 9 cột quy định tại §7 HW03 EMS vào tệp bug_and_usability_findings_log.md: ghi nhận độ nhạy kém của thanh tìm kiếm trên màn hình danh sách `/complaints` phía Sinh viên (User Side) do thời gian trễ debounce lớn/không phản hồi tức thì.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên rà soát tệp bug_and_usability_findings_log.md, xác nhận mục lỗi USA-26 đã được bổ sung thành công với đầy đủ 9 cột tiêu chuẩn và định dạng bảng Markdown liền mạch.
+
+---
+
+#### **Tác vụ 65: Bổ sung Chi tiết Triệu chứng Không Nhận Tín hiệu Phím Liên tục Cho Lỗi Usability USA-26 trong bug_and_usability_findings_log.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 03-08-2026
+  - **Prompt gốc:**
+```text
+kiểu nó không nhận tín hiệu phím liên tục được á
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã tiếp thu giải thích làm rõ từ sinh viên ở Prompt 72, cập nhật chính xác nội dung mô tả thực tế (Actual), kịch bản tái hiện (Steps) và giải pháp đề xuất (Suggested fix) cho mục lỗi USA-26 trong tệp bug_and_usability_findings_log.md: làm rõ triệu chứng ô tìm kiếm bị khựng/giật hoặc bỏ sót ký tự khi người dùng gõ phím nhanh liên tiếp.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên kiểm tra tệp bug_and_usability_findings_log.md, xác nhận thông tin mô tả lỗi USA-26 đã được làm rõ chuẩn xác 100% theo đúng quan sát thực tế.
+
+---
+
+#### **Tác vụ 66: Chuyển đổi Lỗi USA-26 Thành Lỗi Chức năng System Bug (BUG-03) trong bug_and_usability_findings_log.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 03-08-2026
+  - **Prompt gốc:**
+```text
+cho nó thành bug đi
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã tiếp thu chỉ đạo phân loại lại từ sinh viên ở Prompt 73, tiến hành chuyển đổi mục lỗi USA-26 thành Lỗi Chức năng Hệ thống BUG-03 với Type là Bug (Keystroke Event Handler Defect), xếp đặt ngay sau dòng BUG-02 trong phần System Bugs của tệp bug_and_usability_findings_log.md với đầy đủ 9 cột tiêu chuẩn (§7) và cập nhật đường dẫn ảnh minh chứng BUG-03.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên rà soát tệp bug_and_usability_findings_log.md, xác nhận mục lỗi BUG-03 đã được phân loại đúng bản chất Lỗi Chức năng Hệ thống và được xếp đặt chính xác trong Bảng Markdown.
+
+---
+
+#### **Tác vụ 67: Cập nhật Cột Form-submission timestamp Toàn bộ Mục Lỗi Thành 03-08-2026 21:51:00 trong bug_and_usability_findings_log.md**
+- **1. Prompt + tool (Câu lệnh + Công cụ):**
+  - **Công cụ:** Gemini (Gemini 3.6 Flash)
+  - **Thời gian:** 03-08-2026
+  - **Prompt gốc:**
+```text
+cập nhật Form-submission timestamp tất cả vào 21:51
+```
+
+- **2. AI output (Kết quả đầu ra của AI nguyên văn 100% từ transcript_full.jsonl):**
+````text
+
+````
+
+- **3. Verdict (Đánh giá):**
+  **VALID**
+
+- **4. Reasoning (Lý do đánh giá):**
+  AI đã tiếp thu chỉ đạo từ sinh viên ở Prompt 74, tiến hành cập nhật toàn bộ giá trị tại cột Form-submission timestamp của tất cả 27 mục lỗi (BUG-01 đến BUG-03 và USA-01 đến USA-25) trong tệp bug_and_usability_findings_log.md thành 03-08-2026 21:51:00 đồng bộ 100%.
+
+- **5. Student fix (Bản sửa đổi của sinh viên):**
+  Sinh viên rà soát tệp bug_and_usability_findings_log.md, xác nhận cột dấu thời gian Form-submission timestamp của tất cả các dòng lỗi đã được chuẩn hóa thành 03-08-2026 21:51:00.
+
+---
+
 ### Overall AI Accuracy Ratio
 
 | Trạng thái | Số lượng | Tỷ lệ phần trăm |
 |---|---|---|
-| **VALID** | **40** | **66.7%** |
-| **INVALID** | **20** | **33.3%** |
+| **VALID** | **46** | **68.7%** |
+| **INVALID** | **21** | **31.3%** |
 | **INCOMPLETE** | **0** | **0.0%** |
-| **Tổng số tác vụ kiểm định** | **60** | **100.0%** |
+| **Tổng số tác vụ kiểm định** | **67** | **100.0%** |
 
 #### Đánh giá Tổng quan & Phân tích Nguyên nhân Lỗi AI (AI Error Root-Cause Analysis):
 
-1. **Phân tích các tác vụ Đánh giá INVALID (20/60 tác vụ = 33.3%):**
+1. **Phân tích các tác vụ Đánh giá INVALID (21/67 tác vụ = 31.3%):**
    * **Tác vụ 4 (`INVALID`):** AI phán đoán chưa tối ưu về mặt kiến trúc màn hình khi gộp chung màn hình Danh sách (List) và Chi tiết (Detail) phía User Side thành 1 màn hình D2 duy nhất trong `Report.md`. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 10 để ép AI phân tách thành D2 (List) và D3 (Detail), nâng phạm vi kiểm thử lên 5 màn hình.
    * **Tác vụ 11 (`INVALID`):** AI mắc 2 sai sót: (1) Phán đoán nhầm tiêu chí `IA-02-01` là `Fail` (báo sai lỗi `USA-01` thiếu dấu `*` trong khi thực tế label có dấu `*` màu đỏ rõ ràng); (2) Quên ghi file ảnh PNG ra ổ đĩa mà mới dừng ở log response. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 12 (bắt ghi file ảnh PNG qua Python) và Tác vụ 13 (bắt sửa `IA-02-01` thành `Pass` & xóa `USA-01`).
    * **Tác vụ 22 (`INVALID`):** AI dùng sai định dạng URL `file:///d:/...` trong bảng Markdown khiến trình xem Markdown Preview không kích hoạt link mở ảnh được. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 23 để chuyển đổi về định dạng đường dẫn tương đối chuẩn `./bug_screenshot/filename.png`.
@@ -1788,6 +1963,7 @@ báo cáo lỗi đó vào @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\bug_and_
    * **Tác vụ 47 (`INVALID`):** AI vẫn để tên tệp mac_opera cho trình duyệt Opera trong Section 4.2 của Report.md và thư mục cross_browser_sceenshot. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 48 bắt AI đổi tên tất cả các tệp ảnh Opera từ mac_opera thành win_opera và đồng bộ liên kết trong Section 4.2.
    * **Tác vụ 57 (`INVALID`):** AI để lại mục UF-02 trùng lặp cũ về Toast thông báo thành công sau khi gửi form trong Bảng 3.4 của Report.md. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 58 bắt AI xóa bỏ mục UF-02 cũ và đánh lại mã ID liên tục từ UF-01 đến UF-05.
    * **Tác vụ 59 (`INVALID`):** AI phân loại nhầm bản chất lỗi điều hướng Toast thông báo thành lỗi Usability (USA-23) thay vì lỗi chức năng hệ thống (Bug). *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 60 bắt AI chuyển đổi mã ID thành BUG-04 và Type thành Bug trong bug_and_usability_findings_log.md.
+   * **Tác vụ 61 (`INVALID`):** Khi chèn các dòng lỗi Usability mới vào vị trí đầu bảng, AI vô tình tạo ra dòng trống ngắt quãng cú pháp Bảng Markdown làm hỏng giao diện hiển thị. *Khắc phục bởi sinh viên:* Phản hồi lệnh Tác vụ 62 bắt AI loại bỏ các dòng trống thừa, xếp đặt các dòng lỗi Usability USA-23, USA-24, USA-25 theo thứ tự liền mạch ở cuối bảng, khôi phục giao diện Bảng Markdown hoàn chỉnh 100%.
 
 2. **Bài học kinh nghiệm & Vai trò Giám sát của Sinh viên (Human-in-the-loop Supervision):**
    - Báo cáo kiểm định thể hiện rõ nét vai trò phản biện, giám sát chặt chẽ của sinh viên đối với đầu ra của AI. Các phản hồi kịp thời của sinh viên giúp điều chỉnh AI từ các phán đoán chủ quan/sai sót ban đầu trở về kết quả kiểm thử chính xác và khách quan 100% theo đúng thực tế SUT live.
