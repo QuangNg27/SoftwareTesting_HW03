@@ -376,3 +376,18 @@ cho nó thành bug đi
 ```text
 cập nhật Form-submission timestamp tất cả vào 21:51
 ```
+
+### [04-08-2026 20:47] | Gemini
+```text
+từ nội dung đánh giá trong AI Audit Report hãy tạo file AI_Critique khoảng 200-300 từ trả lời Where did the AI get something wrong, biased, or incomplete? Why did it fail to catch the issue? What principle have you learned about collaboratng with AI during this assignment?
+```
+
+### [04-08-2026 20:50] | Gemini
+```text
+dịch tiếng việt @[d:\NAM_3\HK3\KTPM\HW03\SoftwareTesting_HW03\AI_Critique.md]
+```
+
+### [04-08-2026 20:57] | Gemini
+```text
+đọc lại đề @[2026.HW03.GUI Usability EMS_En.pdf] phần 15 yêu cầu về README file rồi bổ sung thông tin tương ứng
+```
